@@ -1,0 +1,583 @@
+/** See /media/breezingforms/themes-bootstrap/stasis/script.php for Google Font inclusion **/
+@import url(//fonts.googleapis.com/css?family=Maven+Pro:500&subset=latin,greek,latin-ext,cyrillic);
+
+.bfQuickMode .bfPage{
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.bfQuickMode{
+    font-family: 'Maven Pro', Helvetica,Arial,sans-serif;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: normal;
+    color: #aaaaaa;
+}
+
+.bfQuickMode .controls{
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.bfQuickMode .input-append .add-on:last-child, 
+.bfQuickMode .input-append .btn:last-child, 
+.bfQuickMode .input-append .btn-group:last-child > .dropdown-toggle {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.bfQuickMode .controls .add-on:last-child, 
+.bfQuickMode .controls .btn:last-child, 
+.bfQuickMode .controls .btn-group:last-child > .dropdown-toggle {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.bfQuickMode .input-append .btn{
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 40px;
+    vertical-align: middle;
+    padding-right: 12px;
+    padding-left: 9px;
+}
+
+.bfQuickMode .btn-toolbar{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    height: 31px;
+}
+
+.bfQuickMode .btn-toolbar a.btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 31px;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: middle;
+    padding-right: 12px;
+    padding-left: 9px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bfQuickMode .btn:active,
+.bfQuickMode .btn:hover,
+.bfQuickMode .btn:focus
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background-image: none;
+    outline: none;
+    transition: none;
+    background-position: 0;
+    background-repeat: no-repeat;
+    height: 40px;
+    background-color: #B5C8E0;
+    color: #ffffff;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity: 0.9;
+    font-weight: lighter;
+    text-shadow: none;
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: top;
+    text-align: center;
+    padding-right: 12px;
+    padding-left: 9px;
+    vertical-align: middle;
+}
+
+.bfQuickMode .btn
+ {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    outline: none;
+    background-repeat: no-repeat;
+    transition: none;
+    background-position: 0;
+    height: 40px;
+    background-color: #B5C8E0;
+    color: #ffffff;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity: 0.9;
+    font-weight: lighter;
+    text-shadow: none;
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: top;
+    text-align: center;
+    padding-right: 3px;
+}
+
+.bfQuickMode .controls .btn {
+    border: none;
+    height: 40px;
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    padding-right: 12px;
+    padding-left: 9px;
+}
+
+.bfQuickMode input[type=text], 
+.bfQuickMode textarea,
+.bfQuickMode .uneditable-input
+{
+    -webkit-appearance: none;
+}
+
+.bfQuickMode input[type="text"],  
+.bfQuickMode textarea, 
+.bfQuickMode .uneditable-input,
+.bfQuickMode input[type="text"]:focus,  
+.bfQuickMode textarea:focus, 
+.bfQuickMode .uneditable-input:focus,
+.bfQuickMode input[type="text"]:hover,  
+.bfQuickMode textarea:hover, 
+.bfQuickMode .uneditable-input:hover{
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    margin: 0;
+    transition: none;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 14px;
+    padding: 4px 6px;
+    background-color: #ffffff;
+    border-color: #E8E8E8;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    -webkit-appearance: none;
+}
+
+.bfQuickMode select,
+.bfQuickMode select:focus,
+.bfQuickMode select:active,
+.bfQuickMode select:hover{
+    outline: 0;
+    transition: none;
+    margin: 0;
+    border-radius: 0;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 14px;
+    padding: 4px 6px;
+    background-color: #ffffff;
+    border-color: #E8E8E8;
+    height: 30px;
+    font-weight: lighter;
+}
+
+.bfQuickMode select[multiple]{
+    min-height: 100px;
+}
+
+.bfQuickMode input[type="text"]:focus, 
+.bfQuickMode textarea:focus,  
+.bfQuickMode .uneditable-input:focus{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    transition: none;
+    outline: none;
+}
+
+.bfQuickMode textarea,
+.bfQuickMode textarea:focus,
+.bfQuickMode textarea:hover,
+.bfQuickMode textarea:active{
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.bfQuickMode fieldset legend {
+    text-align: center;
+    color: #8DB0DE;
+    background-color: #CDE3FF;
+    border: none;
+    height: 55px;
+    line-height: 55px;
+    font-weight: normal;
+    font-size: 18px;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity: 0.9;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bfQuickMode fieldset fieldset legend {
+    background-color: #CDE3FF;
+    color: #8DB0DE;
+}
+
+.bfQuickMode fieldset .bfLegendIcon{
+    float: left;
+    padding-top: 0;
+    background-color: #B5C8E0;
+    width: 55px;
+    height: 55px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.bfQuickMode fieldset fieldset .bfLegendIcon{
+    background-color: #B5C8E0;
+    color: #ffffff;
+}
+
+.bfQuickMode label, 
+.bfQuickMode input[type="text"], 
+.bfQuickMode button, 
+.bfQuickMode select, 
+.bfQuickMode textarea,
+.bfQuickMode .uneditable-input{
+    font-family: 'Maven Pro', Helvetica,Arial,sans-serif;
+    color: #aaaaaa;
+}
+
+.bfQuickMode .controls .control-label{
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 18px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-left: 8px;
+}
+
+.bfQuickMode fieldset .bfElemWrap,
+.bfQuickMode section .bfElemWrap {
+    border-bottom-color: #F5F5F5;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 8px;
+}
+
+.bfQuickMode fieldset .bfElemWrap:last-of-type,
+.bfQuickMode section .bfElemWrap:last-of-type {
+    border-bottom-color: #F5F5F5;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    padding-bottom: 8px;
+}
+
+@media all and (max-width: 767px) {
+  .bfQuickMode .controls .control-label{
+        margin: 0;
+        background-color: #F1F3FF;
+        max-width: 98% !important;
+        min-width: 98% !important;
+        width: 98% !important;
+        display: block !important;
+        height: 18px;
+        min-height: 18px;
+        max-height: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 2%;
+   }
+   .bfQuickMode input[type=text], 
+   .bfQuickMode textarea,  
+   .bfQuickMode .uneditable-input,
+   .bfQuickMode input[type=text]:hover, 
+   .bfQuickMode textarea:hover,  
+   .bfQuickMode .uneditable-input:hover,
+   .bfQuickMode input[type=text]:focus, 
+   .bfQuickMode textarea:focus,  
+   .bfQuickMode .uneditable-input:focus{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+        border: 1px solid #F1F3FF;
+        -webkit-appearance: none;
+    }
+    .bfQuickMode select {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .bfQuickMode fieldset .bfElemWrap {
+        padding-bottom: 0px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        border: none;
+    }
+    .bfQuickMode fieldset .bfElemWrap:last-of-type {
+        padding-bottom: 0px;
+    }
+    .ff_elem{
+        padding-top: 2px;
+    }
+}
+
+.bfQuickMode .hero-unit{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    background: none;
+    border: none;
+    margin: 0;
+    background-color: #8DB0DE;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    background-image: none;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 18px;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+.bfQuickMode .hero-unit p {
+    text-shadow: none;
+}
+
+.bfQuickMode label .icon-asterisk,
+.bfQuickMode label .icon-question-sign,
+.bfQuickMode label .icon-upload
+{
+    color: #c5c5c5;
+}
+
+.bfQuickMode .form-actions {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: #ffffff;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-image: none;
+    outline: none;
+    border-top-color: #F5F5F5;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 8px;
+}
+
+.bfQuickMode .form-actions .btn {
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    vertical-align: middle;
+    background-color: #B5C8E0;
+    color: #ffffff;
+}
+
+.bfQuickMode .form-actions .bfSubmitButton{
+    background-color: #8DB0DE;
+    color: #ffffff;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity: 0.9;
+    border: none;
+}
+
+.bfQuickMode .form-actions .bfCancelButton{
+    margin-left: 5px;
+}
+
+.bfQuickMode .bfCaptchaField + button{
+    width: 55px;
+    min-width: 55px;
+    max-width: 55px;
+}
+
+.bfQuickMode .form-actions .btn:active,
+.bfQuickMode .form-actions .btn:hover,
+.bfQuickMode .form-actions .btn:focus
+{
+
+}
+
+.bfQuickMode .well,
+.bfQuickMode .well .small{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    background: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    font-size: 16px;
+    background-color: #F1F3FF;
+    color: #8DB0DE;
+}
+
+.bfQuickMode .progress {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    background: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: #F7F7F7;
+    height: 18px;
+    margin-bottom: 18px;
+}
+
+.bfQuickMode .bar {
+    background-color: #B5C8E0;
+    filter: none;
+}
+
+.bfQuickMode .progress .bar {
+    filter: none;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    text-shadow: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+    background-color: #B5C8E0;
+    transition: width 0.6s ease 0s;
+    width: 0;
+}
+
+.bfQuickMode .thumbnail{
+    border: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.bfQuickMode .img-polaroid{
+    border: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.bfQuickMode #recaptcha_widget{
+    width: 60%;
+}
+
+.bfQuickMode #recaptcha_widget .controls .btn{
+    background-color: #B5C8E0;
+}
+
+.bfQuickMode #recaptcha_widget input[type="text"]{
+    width: 100%;
+    max-width: 62%;
+}
+
+.bfQuickMode .tooltip-arrow {
+    display: none;
+}
+
+.bfQuickMode .tooltip-inner {
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    background-color: #B5C8E0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity:1.0;
+    opacity: 1.0;
+}
+

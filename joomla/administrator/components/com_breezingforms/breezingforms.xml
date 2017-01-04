@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_BREEZINGFORMS</name>
+	<creationDate>2016-08-19</creationDate>
+	<author>Markus Bopp | Until FacileForms Version 1.4.7: Peter Koch</author>
+	<copyright>This Joomla! component is released under the GNU/GPL license</copyright>
+        <license>GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>markus.bopp@crosstec.org</authorEmail>
+	<authorUrl>www.crosstec.org</authorUrl>
+	<version>(build 919)</version>
+	<description>Installation successful. Next find BreezingForms in the Components menu, and finish the installation process.</description>
+	<installfile>install.php</installfile>
+        <uninstallfile>uninstall.php</uninstallfile>
+
+        <scriptfile>script.php</scriptfile>
+
+        <updateservers>
+            <server type="extension" name="BreezingForms Lite" priority="1">https://crosstec.org/updates/breezingforms/breezingformslite_update.xml</server>
+         </updateservers>
+
+	<files folder="site">
+                <filename>index.html</filename>
+                <filename>breezingforms.php</filename>
+                <filename>facileforms.class.php</filename>
+                <filename>facileforms.js</filename>
+                <filename>facileforms.process.php</filename>
+                <filename>facileforms.xml.php</filename>
+                <filename>router.php</filename>
+                <folder>downloadtpl</folder>
+                <folder>helpers</folder>
+                <folder>exports</folder>
+                <folder>images</folder>
+                <folder>libraries</folder>
+                <folder>themes</folder>
+                <folder>uploads</folder>
+                <folder>views</folder>
+        </files>
+
+        <languages folder="admin">
+                <language tag="de-DE">languages/de-DE/public/de-DE.com_breezingforms.ini</language>
+		<language tag="en-GB">languages/en-GB/public/en-GB.com_breezingforms.ini</language>
+		<language tag="hu-HU">languages/hu-HU/public/hu-HU.com_breezingforms.ini</language>
+		<language tag="tr-TR">languages/tr-TR/public/tr-TR.com_breezingforms.ini</language>
+		<language tag="fr-FR">languages/fr-FR/public/fr-FR.com_breezingforms.ini</language>
+		<language tag="es-ES">languages/es-ES/public/es-ES.com_breezingforms.ini</language>
+		<language tag="nl-NL">languages/nl-NL/public/nl-NL.com_breezingforms.ini</language>
+	</languages>
+
+	<uninstall>
+		<queries>
+			<query>
+				delete from `#__components`
+				where `option` = 'com_breezingforms'
+				and (
+					(admin_menu_link like 'option=com_breezingforms&amp;act=run%')
+					or
+					(admin_menu_link='' and link='')
+				)
+			</query>
+		</queries>
+	</uninstall>
+
+
+	<administration>
+		<menu>COM_BREEZINGFORMS</menu>
+		<submenu>
+			<menu act="managerecs" alt="BreezingForms/Manage Records">COM_BREEZINGFORMS_MANAGE_RECORDS</menu>
+			<menu act="manageforms" alt="BreezingForms/Manage Forms">COM_BREEZINGFORMS_MANAGE_FORMS</menu>
+			<menu act="managescripts" alt="BreezingForms/Manage Scripts">COM_BREEZINGFORMS_MANAGE_SCRIPTS</menu>
+			<menu act="managepieces" alt="BreezingForms/Manage Pieces">COM_BREEZINGFORMS_MANAGE_PIECES</menu>
+			<menu act="integrate" alt="BreezingForms/Integrator">COM_BREEZINGFORMS_INTEGRATOR</menu>
+			<menu act="managemenus" alt="BreezingForms/Manage Backend Menus">COM_BREEZINGFORMS_MANAGE_BACKEND_MENUS</menu>
+			<menu act="configuration" alt="BreezingForms/Configuration">COM_BREEZINGFORMS_CONFIGURATION</menu>
+		</submenu>
+		<files folder="admin">
+                        <filename>index.html</filename>
+                        <filename>access.xml</filename>
+                        <filename>config.xml</filename>
+                        <filename>admin.breezingforms.php</filename>
+                        <filename>breezingforms.php</filename>
+                        <filename>install.php</filename>
+                        <filename>uninstall.php</filename>
+                        <filename>controller.php</filename>
+                        <filename>toolbar.facileforms.html.php</filename>
+                        <filename>toolbar.facileforms.php</filename>
+                        <folder>admin</folder>
+                        <folder>ajax_cache</folder>
+                        <folder>images</folder>
+                        <folder>languages</folder>
+                        <folder>libraries</folder>
+                        <folder>mailtpl</folder>
+                        <folder>packages</folder>
+                        <folder>payment_cache</folder>
+                        <folder>pdftpl</folder>
+                        <folder>sql</folder>
+                        <folder>views</folder>
+                </files>
+
+		<languages folder="admin">
+			<language tag="de-DE">languages/de-DE/admin/de-DE.com_breezingforms.ini</language>
+                        <language tag="de-DE">languages/de-DE/admin/de-DE.com_breezingforms.sys.ini</language>
+
+                        <language tag="en-GB">languages/en-GB/admin/en-GB.com_breezingforms.ini</language>
+                        <language tag="en-GB">languages/en-GB/admin/en-GB.com_breezingforms.sys.ini</language>
+
+			<language tag="hu-HU">languages/hu-HU/admin/hu-HU.com_breezingforms.ini</language>
+                        <language tag="hu-HU">languages/hu-HU/admin/hu-HU.com_breezingforms.sys.ini</language>
+
+                        <language tag="tr-TR">languages/tr-TR/admin/tr-TR.com_breezingforms.ini</language>
+                        <language tag="tr-TR">languages/tr-TR/admin/tr-TR.com_breezingforms.sys.ini</language>
+
+                        <language tag="fr-FR">languages/fr-FR/admin/fr-FR.com_breezingforms.ini</language>
+                        <language tag="fr-FR">languages/fr-FR/admin/fr-FR.com_breezingforms.sys.ini</language>
+
+			<language tag="es-ES">languages/es-ES/admin/es-ES.com_breezingforms.ini</language>
+                        <language tag="es-ES">languages/es-ES/admin/es-ES.com_breezingforms.sys.ini</language>
+
+			<language tag="nl-NL">languages/nl-NL/admin/nl-NL.com_breezingforms.ini</language>
+                        <language tag="nl-NL">languages/nl-NL/admin/nl-NL.com_breezingforms.sys.ini</language>
+		</languages>
+
+	</administration>
+
+</extension>

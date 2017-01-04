@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* @com_j2store - J2Store
+* @author    Sasi varna kumar - Weblogicx India http://www.weblogicxindia.com
+* @copyright Copyright (C) 2014 - 19 Weblogicxindia.com. All Rights Reserved.
+* @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+* @Websites: http://j2store.org
+* @Technical Support:  Forum - http://j2store.org/forum/index.html
+ -->
+<form
+  type="browse"
+  show_header="1"
+  show_filters="1"
+  show_pagination="1"
+  norows_placeholder="J2STORE_NO_ITEMS_FOUND"
+  >
+
+  <headerset>
+   	<header name="ordering" type="ordering" sortable="true"  />
+    <header name="j2store_coupon_id" type="rowselect" tdwidth="20" label="J2STORE_COUPON_ID"/>
+    <header name="coupon_name" type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_COUPON_NAME"/>
+    <header name="coupon_code" type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_COUPON_CODE"/>
+    <header name="value" type="fieldsearchable" sortable="true" translate="false" label="J2STORE_COUPON_VALUE"/>
+    <header name="valid_from" translate="false" label="J2STORE_COUPON_VALID_FROM"/>
+    <header name="valid_to" translate="false" label="J2STORE_COUPON_VALID_TO"/>
+    <header label="J2STORE_COUPON_EXPIRY"/>
+    <header name="enabled" type="published" sortable="true" tdwidth="8%" />
+  </headerset>
+
+  <fieldset name="items" addfieldpath="administrator/components/com_j2store/models/fields">
+     <field name="ordering"  type="ordering" labelclass="order"/>
+    <field name="j2store_coupon_id" type="selectrow"/>
+    <field name="coupon_name" type="text"
+           show_link="true"
+           url="index.php?option=com_j2store&amp;view=coupon&amp;id=[ITEM:ID]" />
+    <field name="coupon_code" type="text" />
+    <field name="value" type="text" />
+    <field name="valid_from" type="text" />
+    <field name="valid_to" type="text" />
+    <field name="expire_date" type="couponexpiretext" />
+    <field name="enabled" type="published"/>
+  </fieldset>
+</form>

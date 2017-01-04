@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* @com_j2store - J2Store
+* @author    Sasi varna kumar - Weblogicx India http://www.weblogicxindia.com
+* @copyright Copyright (C) 2014 - 19 Weblogicxindia.com. All Rights Reserved.
+* @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+* @Websites: http://j2store.org
+* @Technical Support:  Forum - http://j2store.org/forum/index.html
+ -->
+<form
+  type="browse"
+  show_header="1"
+  show_filters="1"
+  show_pagination="1"
+  norows_placeholder="J2STORE_NO_ITEMS_FOUND"
+  >
+
+  <headerset>  	
+   	<header name="j2store_address_id" type="rowselect" tdwidth="20" label="J2STORE_CUSTOMER_ID"/>
+    <header name="customer_name"  type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_CUSTOMER_NAME"/>
+     <header name="email"  type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_EMAIL"/>
+     <header name="totalorders"   sortable="true" translate="false"  label="J2STORE_ORDERS"/>
+    <header name="address_1"  type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_ADDRESS_LINE1"/>
+    <header name="address_2"   sortable="true" translate="false"  label="J2STORE_ADDRESS_LINE2"/>
+    <header name="country_name"  type="fieldsearchable"  sortable="true" translate="false"  label="J2STORE_ADDRESS_COUNTRY"/>
+    <header name="zone_name"   sortable="true" translate="false"  label="J2STORE_ZONE"/>   
+    <header name="zip"   sortable="true" translate="false"  label="J2STORE_ADDRESS_ZIP"/>
+    <header name="phone_1"   sortable="true" translate="false"  label="J2STORE_TELEPHONE"/>
+    <header name="phone_2"   sortable="true" translate="false"  label="J2STORE_ADDRESS_MOBILE"/>
+
+  </headerset>
+
+  <fieldset name="items">    
+      <field name="j2store_address_id" type="selectrow"/>
+    <field name="customer_name" type="text" show_link="true"  url="index.php?option=com_j2store&amp;view=customer&amp;task=viewOrder&amp;email_id=[ITEM:EMAIL]" />
+    <field name="email" type="text" />
+    <field name="totalorders" type="text" />   
+    <field name="address_1" type="text" />
+    <field name="address_2" type="text" />
+    <field name="country_name" type="text" />
+    <field name="zone_name" type="text" />
+    <field name="zip" type="text" />
+    <field name="phone_1" type="text" />
+    <field name="phone_2" type="text" />
+
+  </fieldset>
+</form>

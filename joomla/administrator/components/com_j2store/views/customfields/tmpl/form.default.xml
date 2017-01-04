@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+  type="browse"
+  show_header="1"
+  show_filters="1"
+  show_pagination="1"
+  norows_placeholder="J2STORE_NO_ITEMS_FOUND"
+  >
+
+  <headerset>
+    <header name="j2store_customfield_id" type="rowselect" tdwidth="20" label="J2STORE_CUSTOM_FIELDS_ID"/>
+    <header name="field_namekey" type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_CUSTOM_FIELDS_NAMEKEY"/>
+    <header name="field_name" type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_CUSTOM_FIELDS_NAME"/>     
+    <header name="field_core"  sortable="true" translate="false" label="J2STORE_CUSTOM_FIELDS_CORE"/>       
+    <header name="enabled" type="published" sortable="true" tdwidth="8%" />
+  </headerset>
+  <fieldset name="items" addfieldpath="administrator/components/com_j2store/models/fields">
+    <field name="j2store_customfield_id" type="customfieldrowselect"/>
+    <field name="field_namekey" type="text"
+           show_link="true"
+           url="index.php?option=com_j2store&amp;view=customfield&amp;id=[ITEM:ID]" />
+    <field name="field_name" type="text" />  	 
+    <field name="field_core" type="corefieldtypes" />
+      <field name="enabled" type="published"/>
+  </fieldset>
+</form>

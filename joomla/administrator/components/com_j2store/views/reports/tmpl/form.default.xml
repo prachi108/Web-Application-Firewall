@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	* @package J2store
+	* @subpackage Core
+	* @copyright Copyright (c)2014-2019 Ramesh Elamathi
+	* @license GNU General Public License version 2, or later
+	
+ -->
+ <form type="browse" show_header="1" show_filters="1"
+	show_pagination="1" norows_placeholder="COM_J2STORE_COMMON_NORECORDS">
+	
+	<headerset>
+		<header name="ordering" type="ordering" sortable="true"	tdwidth="5%" />					
+		<header name="extension_id" type="rowselect" tdwidth="20" label="J2STORE_REPORT_ID" />
+		<header name="name" type="fieldsearchable" 	sortable="true" label="J2STORE_REPORT_PLUGIN_NAME"/>	
+		<header name="version" type="field" filterclass="input-small" sortable="true" label="J2STORE_PLUGIN_VERSION" />
+		<header name="view" type="field" filterclass="input-small"	sortable="true"	label="J2STORE_VIEW" />		 		
+		<header name="enabled" type="published" sortable="true" tdwidth="8%" />
+	</headerset>	
+	<fieldset name="items">
+		<field name="ordering" type="ordering" labelclass="order"/>		
+		<field name="extension_id" type="selectrow" />
+		<field name="name" type="text" show_link="true" url="index.php?option=com_j2store&amp;view=reports&amp;task=view&amp;layout=view&amp;id=[ITEM:EXTENSION_ID]" />				
+		<field name="version" type="text" />			
+		<field name="view_text" type="text" show_link="true" url="index.php?option=com_j2store&amp;view=report&amp;task=view&amp;layout=view&amp;id=[ITEM:EXTENSION_ID]" />
+		<field name="enabled" type="published" />
+	</fieldset>
+</form>

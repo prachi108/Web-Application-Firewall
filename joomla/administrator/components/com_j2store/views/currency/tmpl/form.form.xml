@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+/**
+ * @package J2Store
+ * @copyright Copyright (c)2014-17 Ramesh Elamathi / J2Store.org
+ * @license GNU GPL v3 or later
+ */
+ -->
+<form validate="true" serverside_validate="true">
+
+  <fieldset name="basic_information"            
+            class="span6">
+    			    
+    <field name="currency_numeric_code" type="hidden" id="j2store_currency_numeric_code" 
+    		emptylabel="1"   filter="intval" /> 
+    		
+    <field name="currency_title" type="text" label="J2STORE_CURRENCY_TITLE_LABEL" description="J2STORE_CURRENCY_TITLE_DESC"
+           class="inputbox" filter="intval" required="true"                     
+           />
+		 
+	<field name="currency_code" id="currency_code_selector" type="list" 
+			source_file="admin://components/com_j2store/helpers/currency.php"
+			source_class="J2Currency" 
+			source_method="getNumericCurrencies"						
+			label="J2STORE_CURRENCY_CODE_LABEL"
+			description="J2STORE_CURRENCY_CODE_DESC"
+		/>	
+
+  
+    <field name="currency_symbol" type="text" id="j2store_currency_symbol"  label="J2STORE_CURRENCY_SYMBOL_LABEL"  description="J2STORE_CURRENCY_SYMBOL_DESC"
+           class="inputbox" filter="intval" />
+
+    <field name="currency_position" type="list" label="J2STORE_CURRENCY_POSITION_LABEL"
+           labelclass=""
+           description="J2STORE_CURRENCY_POSITION_DESC"
+           class="inputbox"
+           filter="intval" size="1" default="1">
+      <option value="pre">J2STORE_CURRENCY_FRONT</option>
+      <option value="post">J2STORE_CURRENCY_END</option>
+    </field>
+    
+    </fieldset>
+ <fieldset name="advanced_information"            
+            class="span6">
+    <field name="currency_num_decimals" type="text"  label="J2STORE_CURRENCY_NUM_DECIMALS_LABEL" description="J2STORE_CURRENCY_NUM_DECIMALS_DESC"
+	   class="inputbox" filter="intval"/>
+	   
+   <field name="currency_decimal" type="text" label="J2STORE_CURRENCY_DECIMAL_SEPARATOR_LABEL"  description="J2STORE_CURRENCY_DECIMAL_SEPARATOR_DESC" 
+   class="inputbox" filter="intval" default="."/>
+      
+   <field name="currency_thousands" type="text" label="J2STORE_CURRENCY_THOUSANDS_LABEL"  description="J2STORE_CURRENCY_THOUSANDS_DESC"
+   class="inputbox" filter="intval" />
+   
+   <field name="currency_value" type="text" label="J2STORE_CURRENCY_VALUE_LABEL" description="J2STORE_CURRENCY_VALUE_DESC"
+   class="inputbox" filter="intval" />
+   
+   <field name="enabled" type="list" label="JSTATUS"
+			labelclass="j2store-label"
+			description="JFIELD_PUBLISHED_DESC" class="inputbox"
+			filter="intval" size="1" default="1"
+	>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+	</field>
+</fieldset>
+</form>

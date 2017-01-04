@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="j2store" method="upgrade">
+	<name>Report Itemised</name>
+	<version>1.0</version>
+	<creationDate>May 2014</creationDate>
+	<author>Gokila Priya</author>
+	<authorEmail>supports@j2store.org</authorEmail>
+	<authorUrl>http://www.j2store.org</authorUrl>
+	<copyright>2014-19 WeblogicxIndia</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PLG_J2STORE_PLUGIN_REPORT_ITEMISED_DESC</description>
+	<files>
+		<filename plugin="report_itemised">report_itemised.php</filename>
+		<folder>report_itemised</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_j2store_report_itemised.ini</language>
+		<language tag="en-GB">en-GB.plg_j2store_report_itemised.sys.ini</language>
+	</languages>
+</extension>

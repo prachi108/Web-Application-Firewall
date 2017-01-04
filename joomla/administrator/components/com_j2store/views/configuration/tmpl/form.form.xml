@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form validate="true" serverside_validate="true">
+
+	<fieldset id="basic_options" class="tab-pane active" name="basic_options"
+		label="J2STORE_BASIC_OPTIONS">
+		<field name="j2store_enable_css" type="radio" default="1"
+			class="btn-group" label="j2store_conf_j2store_enable_css_label"
+			description="j2store_conf_j2store_enable_css_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="load_jquery_ui" type="list" default="3" 
+			label="j2store_conf_load_jqueryui_label" description="j2store_conf_load_jqueryui_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_ONLY_FRONTEND</option>
+			<option value="2">J2STORE_ONLY_BACKEND</option>
+			<option value="3">J2STORE_BOTH_FRONTEND_AND_BACKEND</option>
+		</field>
+		
+		<field name="jquery_ui_localisation" type="radio" default="0" class="btn-group"
+			label="j2store_conf_jquery_ui_localisation_label" description="j2store_conf_jquery_ui_localisation_desc">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>			
+		</field>
+
+		<field name="load_bootstrap" type="radio" default="1" class="btn-group"
+			label="j2store_conf_load_bootstrap_label" description="j2store_conf_load_bootstrap_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		<field name="load_minimal_bootstrap" type="radio" default="0" class="btn-group"
+			label="j2store_conf_load_minimal_bootstrap_support" description="j2store_conf_load_minimal_bootstrap_support_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="bootstrap_version" type="list" default="2"
+			   label="j2store_conf_bootstrap_version" description="j2store_conf_bootstrap_version_desc">
+			<option value="2">J2STORE_BOOTSTRAP2</option>
+			<option value="3">J2STORE_BOOTSTRAP3</option>
+		</field>
+		
+		<field name="isregister" type="radio" default="0" class="btn-group"
+			label="j2store_conf_isregister_label">
+			<option value="0">J2STORE_EVERYONE</option>
+			<option value="1">J2STORE_ONLY_REGISTERED_USERS</option>
+		</field>
+
+		<field name="date_format" type="text" size="40" default="Y-m-d H:i:s"
+			label="j2store_conf_date_format_label" description="j2store_conf_date_format_desc" />
+
+		<field name="attachmentfolderpath" type="text" default="" size="40"
+			label="j2store_conf_attachmentfolderpath_label" description="j2store_conf_attachmentfolderpath_desc" />
+
+	</fieldset>
+
+	<fieldset id="store_settings" name="store_settings" label="J2STORE_STORE_SETTING"
+		class="tab-pane">
+		<field name="admin_email" type="text" label="J2STORE_ADMIN_EMAIL" id="admin_email"
+			description="J2STORE_ADMIN_EMAIL_DESC" />
+		<field class="btn btn-warning pull-center" type="customlink" id="j2store_testemail"
+			   text="J2STORE_TEST_ADMIN_EMAIL" />
+		<field name="store_name" type="text" label="J2STORE_STORE_NAME"
+			required="true" />
+		<field name="store_address_1" type="text" label="J2STORE_ADDRESS_LINE1" />
+		<field name="store_address_2" type="text" label="J2STORE_ADDRESS_LINE2" />
+		<field name="store_city" type="text" label="J2STORE_ADDRESS_CITY" />
+		<field name="store_zip" type="text" required="true"
+			label="J2STORE_ADDRESS_ZIP" />
+		<field name="country_id" type="list" id="j2store_country_id"
+			source_file="admin://components/com_j2store/helpers/select.php"
+			source_class="J2StoreHelperSelect" source_method="getCountries"
+			sortable="true" tdwidth="15%" label="J2STORE_COUNTRY_NAME" required="true" />
+		<field name="zone_id" type="sql" id="j2store_zone_id" label="J2STORE_ZONE_NAME"
+			query="SELECT * FROM #__j2store_zones" key_field="j2store_zone_id"
+			value_field="zone_name" />
+
+		<field name="config_currency" type="sql" id="j2store_currency_id"
+			label="J2STORE_STORE_DEFAULT_CURRENCY" query="SELECT * FROM #__j2store_currencies"
+			key_field="currency_code" required="true" value_field="currency_title" />
+
+		<field name="config_currency_auto" type="radio"
+			label="J2STORE_STORE_CURRENCY_AUTO_UPDATE_CURRENCY" class="inputbox"
+			filter="intval" size="1" default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field name="config_weight_class_id" type="sql"
+			query="SELECT j2store_weight_id,weight_title FROM #__j2store_weights"
+			multiple="single" key_field="j2store_weight_id" value_field="weight_title"
+			class="inputbox" label="J2STORE_STORE_CONFIG_WEIGHT" />
+
+		<field name="config_length_class_id" type="sql"
+			query="SELECT j2store_length_id,length_title FROM #__j2store_lengths"
+			multiple="single" key_field="j2store_length_id" value_field="length_title"
+			class="inputbox" label="J2STORE_STORE_CONFIG_LENGTH" />
+
+	</fieldset>
+
+	<fieldset id="product_settings" class="tab-pane" name="product_settings"
+		label="J2STORE_PRODUCT_DISPLAY_SETTINGS">
+
+		<field name="catalog_mode" type="radio" default="0" class="btn-group"
+			label="j2store_conf_catalog_mode_label" description="j2store_conf_catalog_mode_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="show_sku" type="radio" default="0" class="btn-group"
+			label="j2store_conf_show_sku_field_label" description="j2store_conf_show_sku_field_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="show_manufacturer" type="radio" default="0" class="btn-group"
+			label="j2store_conf_show_show_manufacturer_label" description="j2store_conf_show_show_manufacturer_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="show_qty_field" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_qty_field_label" description="j2store_conf_show_qty_field_desc">			
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="show_price_field" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_price_field_label" description="j2store_conf_show_price_field_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="show_base_price" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_base_price_label" description="j2store_conf_show_base_price_desc">			
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+	
+		<field name="product_option_price" type="radio" default="1"
+			class="btn-group" label="j2store_conf_product_options_price_label"
+			description="j2store_conf_product_options_price_desc">
+			<option value="0">J2STORE_HIDE</option>
+			<option value="1">J2STORE_SHOW</option>
+		</field>
+
+		<field name="product_option_price_prefix" type="radio" default="1"
+			class="btn-group" label="j2store_conf_product_options_price_prefix_label"
+			description="j2store_conf_product_options_price_prefix_desc">			
+			<option value="0">J2STORE_HIDE</option>
+			<option value="1">J2STORE_SHOW</option>
+		</field>
+		
+		
+		<field name="image_for_product_options" type="radio" default="0"
+			class="btn-group" label="j2store_conf_show_image_for_product_options_label"
+			description="j2store_conf_show_image_for_product_options_desc">
+			<option value="0">J2STORE_HIDE</option>
+			<option value="1">J2STORE_SHOW</option>
+		</field>
+		
+		<field name="related_product_columns" default="3" min="1" type="number"
+			label="j2store_conf_related_product_columns_label"
+			description="j2store_conf_related_product_columns_desc">			
+		</field>
+			
+
+	<!-- 	<field name="weight" type="radio" default="0" class="btn-group"
+			label="j2store_conf_show_weight_label" description="j2store_conf_show_weight_desc">
+			<option value="1">J2STORE_SHOW</option>
+			<option value="0">J2STORE_HIDE</option>
+		</field>
+
+		<field name="dimensions" type="radio" default="0" class="btn-group"
+			label="j2store_conf_show_dimensions_label" description="j2store_conf_show_dimensions_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field> -->
+	</fieldset>
+
+	<fieldset ispro='1' role="tabpanel" class="tab-pane" name="inventory_settings"
+		label="J2STORE_INVENTORY_FIELDS">
+		<field name="enable_inventory" type="radio" default="0" class="btn-group"
+			label="j2store_conf_enable_inventory_label" description="j2store_conf_enable_inventory_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="cancel_order" type="radio" default="0" class="btn-group"
+			label="j2store_conf_inventory_cancel_order_label" description="j2store_conf_inventory_cancel_order_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="hold_stock" type="text" default="60" class="btn-group"
+			label="j2store_conf_hold_stock_label" description="j2store_conf_hold_stock_desc" />
+
+		<field name="stock_display_format" type="list" default="always_show"
+			label="j2store_conf_stock_display_format_label" description="j2store_conf_stock_display_format_desc">
+			<option value="always_show">J2STORE_STOCK_SELECTED_DISPLAY</option>
+			<option value="low_stock">J2STORE_STOCK_SHOW_LOW_STOCK</option>
+			<option value="no_display">J2STORE_STOCK_DO_NOT_DISPLAY</option>
+		</field>
+
+		<field name="store_min_sale_qty" type="text" default="1"
+			description="J2STORE_PRODUCT_MIN_SALE_QUANTITY_DESC" label="J2STORE_PRODUCT_MIN_SALE_QUANTITY"
+			size="30" />
+
+		<field name="store_max_sale_qty" type="text"
+			description="J2STORE_PRODUCT_MAX_SALE_QUANTITY_DESC" label="J2STORE_PRODUCT_MAX_SALE_QUANTITY"
+			size="30" />
+
+		<field name="store_notify_qty" type="text"
+			description="J2STORE_PRODUCT_NOTIFY_QUANTITY_DESC" label="J2STORE_PRODUCT_NOTIFY_QUANTITY"
+			size="30" />
+
+	</fieldset>
+
+	<fieldset role="tabpanel" class="tab-pane" name="tax_settings"
+		label="J2STORE_TAX_FIELDS">
+
+		<field name="config_including_tax" type="radio" default="0"
+			class="btn-group" label="j2store_conf_including_tax_label"
+			description="j2store_conf_including_tax_desc">
+			<option value="1">J2STORE_PRICES_INCLUDING_TAXES</option>
+			<option value="0">J2STORE_PRICES_EXCLUDING_TAXES</option>
+		</field>
+
+		<field name="config_tax_default" type="list" default="billing"
+			label="j2store_conf_calculate_tax_default_label" description="j2store_conf_calculate_tax_default_desc">
+			<option value="billing">J2STORE_BILLING_ADDRESS</option>
+			<option value="shipping">J2STORE_SHIPPING_ADDRESS</option>		
+		</field>
+
+		<field name="config_tax_default_address" type="list" default="store"
+			label="j2store_conf_tax_default_address_label" description="j2store_conf_tax_default_address_desc">
+			<option value="noaddress">J2STORE_NO_ADDRESS</option>
+			<option value="store">J2STORE_STORE_ADDRESS</option>
+		</field>
+		
+		<field name="price_display_options" type="list" default="1"
+			label="j2store_conf_price_display_options_label" description="j2store_conf_price_display_options_desc">
+			<option value="1">J2STORE_CONFIG_PRICE_ONLY</option>
+			<option value="2">J2STORE_CONFIG_PRICE_PLUS_TAX</option>			
+		</field>
+		
+		<field name="display_price_with_tax_info" type="radio" default="0" class="btn-group"
+			label="j2store_conf_display_price_with_tax_info_label" description="j2store_conf_display_price_with_tax_info_desc">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>						
+		</field>
+		
+		<field name="checkout_price_display_options" type="list" default="1"
+			label="j2store_conf_checkout_price_display_options_label" description="j2store_conf_checkout_price_display_options_desc">
+			<option value="0">J2STORE_CONFIG_EXCLUDING_TAX</option>
+			<option value="1">J2STORE_CONFIG_INCLUDING_TAX</option>			
+		</field>	
+
+	</fieldset>
+
+
+
+	<fieldset ispro='1' id="discount_settings" class="tab-pane" name="discount_settings"
+		label="J2STORE_DISCOUNT_SETTINGS">
+
+		<field name="enable_coupon" type="radio" default="0" class="btn-group"
+			label="j2store_conf_enable_coupon_label" description="j2store_conf_enable_coupon_desc">
+			<option value="0">j2store_no</option>
+			<option value="1">j2store_yes</option>
+		</field>
+
+		<field name="enable_voucher" type="radio" default="0" class="btn-group"
+			label="j2store_conf_enable_voucher_label" description="j2store_conf_enable_voucher_desc">
+			<option value="0">j2store_no</option>
+			<option value="1">j2store_yes</option>
+		</field>
+	</fieldset>
+
+	<fieldset role="tabpanel" class="tab-pane" name="cart_settings"
+		label="J2STORE_CART_SETTINGS">
+
+		<field name="addtocart_placement" type="radio" default="default"
+			class="btn-group" label="j2store_conf_addtocart_placement_label"
+			description="j2store_conf_addtocart_placement_desc">
+			<option value="default">J2STORE_CONF_OPTION_ADDTOCART_DEFAULT</option>
+			<option value="tag">J2STORE_CONF_OPTION_ADDTOCART_TAG</option>			
+			<option value="both">J2STORE_CONF_OPTION_ADDTOCART_BOTH</option>
+		</field>
+		
+		<field name="addtocart_action" type="radio" default="1" class="btn-group"
+			label="j2store_conf_addtocart_action_label" description="j2store_conf_addtocart_action_desc">
+			<option value="1">J2STORE_CONF_OPTION_INLINE</option>
+			<option value="3">J2STORE_CONF_OPTION_REDIRECT</option>
+		</field>
+		
+		<field name="config_continue_shopping_page" type="list" default="previous"
+			id="continue_shopping_page" label="j2store_conf_catalog_continue_shopping_label"
+			description="j2store_conf_catalog_continue_shopping_desc">
+			<option value="previous">J2STORE_TO_PREVIOUS_PAGE</option>
+			<option value="menu">J2STORE_TO_MENU</option>
+			<option value="url">J2STORE_TO_URL</option>
+		</field>
+		<field name="config_continue_shopping_page_url" id="continue_shopping_url"
+			type="text" label="j2store_conf_cart_continue_shopping_url_label"
+			description="j2store_conf_cart_continue_shopping_url_desc" />	
+
+		<field name="continue_shopping_page_menu" type="menuitem"
+			id="continue_shopping_menu" label="j2store_conf_cart_continue_shopping_menu_label"
+			description="j2store_conf_cart_continue_shopping_menu_desc" />
+			
+		<field name="addtocart_button_class" type="text" default="btn btn-primary"
+			label="j2store_conf_addtocart_button_class_label"
+			description="j2store_conf_addtocart_button_class_desc" />
+
+		<field name="config_cart_empty_redirect" type="list" default="cart"
+			   id="cart_empty_redirect" label="j2store_conf_cart_empty_redirect_label"
+			   description="j2store_conf_cart_empty_redirect_desc">
+			<option value="cart">J2STORE_TO_CART_VIEW</option>
+			<option value="menu">J2STORE_TO_MENU</option>
+			<option value="url">J2STORE_TO_URL</option>
+		</field>
+		<field name="continue_cart_redirect_menu" type="menuitem"
+			   id="continue_cart_redirect_menu" label="j2store_conf_continue_cart_redirect_menu_label"
+			   description="j2store_conf_continue_cart_redirect_menu_desc" />
+
+		<field name="config_cart_redirect_page_url" id="cart_redirect_page_url"
+			   type="text" label="j2store_conf_cart_redirect_page_url_label"
+			   description="j2store_conf_cart_redirect_page_url_desc" />
+
+
+		<field name="show_thumb_cart" type="radio" default="0" class="btn-group"
+			label="j2store_conf_show_thumb_cart_label" description="j2store_conf_show_thumb_cart_desc">
+			<option value="0">j2store_hide</option>
+			<option value="1">j2store_show</option>
+		</field>
+
+		<field name="show_item_tax" type="radio" default="0" class="btn-group"
+			label="j2store_conf_show_item_tax_label" description="j2store_conf_show_item_tax_desc">
+			<option value="0">j2store_no</option>
+			<option value="1">j2store_yes</option>
+		</field>
+
+		
+		<field name="show_shipping_address" type="radio" default="1"
+			class="btn-group" label="j2store_conf_show_shipping_address_label"
+			description="j2store_conf_show_shipping_address_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="show_login_form" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_login_form_label" description="j2store_conf_show_login_form_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="allow_registration" type="radio" default="1"
+			class="btn-group" label="j2store_conf_allow_registration_label"
+			description="j2store_conf_allow_registration_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="allow_password_validation" type="radio" default="0"
+			class="btn-group" label="j2store_conf_allow_password_validation_label"
+			description="j2store_conf_allow_password_validation_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="allow_guest_checkout" type="radio" default="0"
+			class="btn-group" label="j2store_conf_allow_guest_checkout_label"
+			description="j2store_conf_allow_guest_checkout_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="show_customer_note" type="radio" default="1"
+			class="btn-group" label="j2store_conf_show_customer_note_label"
+			description="j2store_conf_show_customer_note_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="show_tax_calculator" type="radio" default="1"
+			class="btn-group" label="j2store_conf_show_tax_calculator_label"
+			description="j2store_conf_show_tax_calculator_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		<field name="show_clear_cart_button" type="radio" default="0" class="btn-group"
+			   label="j2store_conf_show_clear_cart_button_label" description="j2store_conf_show_clear_cart_button_desc">
+			<option value="0">j2store_hide</option>
+			<option value="1">j2store_show</option>
+		</field>
+		<field name="postalcode_required" type="radio" default="1"
+			class="btn-group" label="j2store_conf_make_postalcode_required_label"
+			description="j2store_conf_make_postalcode_required_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="clear_cart" type="list" default="order_placed"
+			label="j2store_conf_clear_cart_label"
+			description="j2store_conf_clear_cart_desc">
+			<option value="order_placed">J2STORE_ON_PLACEMENT_OF_ORDER</option>
+			<option value="order_confirmed">J2STORE_ON_PAYMENT_CONFIRMATION</option>			
+		</field>
+		
+		<field name="default_payment_method" type="model" default=""
+			model="J2StoreModelPayments" key_field="element" value_field="element" translate="true"
+			label="j2store_conf_default_payment_method_label"
+			description="j2store_conf_default_payment_method_desc">
+			<state key="enabled">1</state>
+		</field>
+		
+		<field name="shipping_mandatory" type="radio" default="0"
+			class="btn-group" label="j2store_conf_shipping_mandatory_label"
+			description="j2store_conf_shipping_mandatory_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="auto_apply_shipping_rate" type="radio" default="0"
+			class="btn-group" label="J2STORE_CONF_J2STORE_AUTO_APPLY_SHIPPING"
+			description="J2STORE_CONF_J2STORE_AUTO_APPLY_SHIPPING_DESC">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="hide_shipping_untill_address_selection" type="radio" default="1"
+			class="btn-group" label="j2store_conf_auto_calculate_shipping_label"
+			description="j2store_conf_auto_calculate_shipping_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+				
+		<field name="clear_outdated_cart_data_term" type="list" default="90"
+			label="j2store_conf_clear_outdated_cart_data_term_label"
+			description="j2store_conf_clear_outdated_cart_data_term_desc">
+			<option value="7">J2STORE_CONF_CLEAR_CART_BEFORE_ONE_WEEK</option>
+			<option value="14">J2STORE_CONF_CLEAR_CART_BEFORE_FOURTEEN</option>
+			<option value="30">J2STORE_CONF_CLEAR_CART_BEFORE_THIRTY</option>
+			<option value="60">J2STORE_CONF_CLEAR_CART_BEFORE_SIXTY</option>
+			<option value="90">J2STORE_CONF_CLEAR_CART_BEFORE_NINETY</option>
+		</field>
+
+	</fieldset>
+	<fieldset name="checkout_layout" label="J2STORE_STORE_CHECKOUT_LAYOUT"
+		class="tab-pane" addfieldpath="administrator/components/com_j2store/models/fields">
+		<field class="btn btn-warning pull-right" type="button"
+			onclick="Joomla.submitbutton('populatedata');" text="J2STORE_PREPOPULATE_CHECKOUT_LAYOUT" />
+		<field name="store_billing_layout" type="textarea"
+			label="J2STORE_STORE_BILLING_LAYOUT_LABEL" buttons="true" class="input"
+			rows="10" cols="50" filter="html" />
+		<field name="store_shipping_layout" type="textarea"
+			label="J2STORE_STORE_SHIPPING_LAYOUT_LABEL" buttons="true" class="input-xlarge"
+			rows="10" cols="50" filter="html" />
+		<field name="store_payment_layout" type="textarea"
+			label="J2STORE_STORE_PAYMENT_LAYOUT_LABEL" buttons="true" class="input-xlarge"
+			rows="10" cols="50" filter="html" />
+	</fieldset>
+
+	<fieldset id="order_settings" class="tab-pane" default="5"
+		name="order_settings" label="J2STORE_ORDER_SETTINGS">
+
+		<field name="invoice_prefix" type="text" label="J2STORE_INVOICE_PREFIX" />
+		<field name="show_postpayment_orderlink" type="radio" default="1"
+			class="btn-group" label="j2store_conf_show_postpayment_orderlink_label"
+			description="j2store_conf_show_postpayment_orderlink_desc">			
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="download_area" type="radio" default="1"
+			class="btn-group" label="j2store_conf_show_download_area_label"
+			description="j2store_conf_show_download_area_desc">
+			<option value="0">J2STORE_HIDE</option>
+			<option value="1">J2STORE_SHOW</option>
+		</field>
+		
+		<field name="limit_orderstatuses"  type="orderstatuslist"  multiple="true" default="*"
+				 label="j2store_conf_limit_orderstatuses_label"
+				 description="j2store_conf_limit_orderstatuses_desc"
+				 >
+		</field>
+		<field name="show_thumb_email" type="radio" default="0" class="btn-group"
+			   label="j2store_conf_show_thumb_email_label" description="j2store_conf_show_thumb_email_desc">
+			<option value="0">j2store_hide</option>
+			<option value="1">j2store_show</option>
+		</field>
+		
+	</fieldset>
+
+	<fieldset role="tabpanel" class="tab-pane" name="updates"
+		label="COM_J2STORE_CONFIG_UPDATES_LABEL" description="COM_J2STORE_CONFIG_UPDATES_DESC">
+
+		<field name="downloadid" type="text" default="" size="30"
+			label="COM_J2STORE_CONFIG_UPDATE_DOWNLOADID_LABEL" description="COM_J2STORE_CONFIG_UPDATE_DOWNLOADID_DESC" />
+
+		<field name="liveupdate" type="hidden" default="" emptylabel="1"
+			description="" />
+	</fieldset>
+
+	<fieldset role="tabpanel" class="tab-pane" name="misc_settings"
+		label="J2STORE_MISC_SETTINGS">
+
+		<field name="show_terms" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_terms_label" description="j2store_conf_show_terms_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="terms_display_type" type="radio" default="link"
+			class="btn-group" label="j2store_conf_terms_display_type_label"
+			description="j2store_conf_terms_display_type_desc">
+			<option value="link">J2STORE_CONF_TERMS_DISPLAY_OPTION_LINK</option>
+			<option value="checkbox">J2STORE_CONF_TERMS_DISPLAY_OPTION_CHECKBOX
+			</option>
+		</field>
+		
+		<field name="termsid" type="modal_article" size="20" default=""
+			label="j2store_conf_termsid_label" description="j2store_conf_termsid_desc" />
+		
+		<field name="prepare_content" type="radio" default="0" class="btn-group"
+			label="j2store_conf_prepare_content_label" description="j2store_conf_prepare_content_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>	
+		
+		<field name="enable_falang_support" type="radio" default="0" class="btn-group"
+			label="j2store_conf_enable_falang_support_label" description="j2store_conf_enable_falang_support_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+	</fieldset>
+
+</form>

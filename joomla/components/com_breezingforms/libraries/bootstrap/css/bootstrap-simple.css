@@ -1,0 +1,2019 @@
+
+/*!
+ * Bootstrap v2.3.2
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+.bfQuickMode {
+  /* Allow for input prepend/append in search forms */
+ 
+}
+.bfQuickMode .clearfix {
+  *zoom: 1;
+}
+.bfQuickMode .clearfix:before,
+.bfQuickMode .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bfQuickMode .clearfix:after {
+  clear: both;
+}
+.bfQuickMode .hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.bfQuickMode .input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bfQuickMode .row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+.bfQuickMode .row:before,
+.bfQuickMode .row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bfQuickMode .row:after {
+  clear: both;
+}
+.bfQuickMode [class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+.bfQuickMode .container,
+.bfQuickMode .navbar-static-top .container,
+.bfQuickMode .navbar-fixed-top .container,
+.bfQuickMode .navbar-fixed-bottom .container {
+  width: 940px;
+}
+.bfQuickMode .span12 {
+  width: 940px;
+}
+.bfQuickMode .span11 {
+  width: 860px;
+}
+.bfQuickMode .span10 {
+  width: 780px;
+}
+.bfQuickMode .span9 {
+  width: 700px;
+}
+.bfQuickMode .span8 {
+  width: 620px;
+}
+.bfQuickMode .span7 {
+  width: 540px;
+}
+.bfQuickMode .span6 {
+  width: 460px;
+}
+.bfQuickMode .span5 {
+  width: 380px;
+}
+.bfQuickMode .span4 {
+  width: 300px;
+}
+.bfQuickMode .span3 {
+  width: 220px;
+}
+.bfQuickMode .span2 {
+  width: 140px;
+}
+.bfQuickMode .span1 {
+  width: 60px;
+}
+.bfQuickMode .offset12 {
+  margin-left: 980px;
+}
+.bfQuickMode .offset11 {
+  margin-left: 900px;
+}
+.bfQuickMode .offset10 {
+  margin-left: 820px;
+}
+.bfQuickMode .offset9 {
+  margin-left: 740px;
+}
+.bfQuickMode .offset8 {
+  margin-left: 660px;
+}
+.bfQuickMode .offset7 {
+  margin-left: 580px;
+}
+.bfQuickMode .offset6 {
+  margin-left: 500px;
+}
+.bfQuickMode .offset5 {
+  margin-left: 420px;
+}
+.bfQuickMode .offset4 {
+  margin-left: 340px;
+}
+.bfQuickMode .offset3 {
+  margin-left: 260px;
+}
+.bfQuickMode .offset2 {
+  margin-left: 180px;
+}
+.bfQuickMode .offset1 {
+  margin-left: 100px;
+}
+.bfQuickMode .row-fluid {
+  width: 100%;
+  *zoom: 1;
+}
+.bfQuickMode .row-fluid:before,
+.bfQuickMode .row-fluid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bfQuickMode .row-fluid:after {
+  clear: both;
+}
+.bfQuickMode .row-fluid [class*="span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 2.127659574468085%;
+  *margin-left: 2.074468085106383%;
+}
+.bfQuickMode .row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+.bfQuickMode .row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 2.127659574468085%;
+}
+.bfQuickMode .row-fluid .span12 {
+  width: 100%;
+  *width: 99.94680851063829%;
+}
+.bfQuickMode .row-fluid .span11 {
+  width: 91.48936170212765%;
+  *width: 91.43617021276594%;
+}
+.bfQuickMode .row-fluid .span10 {
+  width: 82.97872340425532%;
+  *width: 82.92553191489361%;
+}
+.bfQuickMode .row-fluid .span9 {
+  width: 74.46808510638297%;
+  *width: 74.41489361702126%;
+}
+.bfQuickMode .row-fluid .span8 {
+  width: 65.95744680851064%;
+  *width: 65.90425531914893%;
+}
+.bfQuickMode .row-fluid .span7 {
+  width: 57.44680851063829%;
+  *width: 57.39361702127659%;
+}
+.bfQuickMode .row-fluid .span6 {
+  width: 48.93617021276595%;
+  *width: 48.88297872340425%;
+}
+.bfQuickMode .row-fluid .span5 {
+  width: 40.42553191489362%;
+  *width: 40.37234042553192%;
+}
+.bfQuickMode .row-fluid .span4 {
+  width: 31.914893617021278%;
+  *width: 31.861702127659576%;
+}
+.bfQuickMode .row-fluid .span3 {
+  width: 23.404255319148934%;
+  *width: 23.351063829787233%;
+}
+.bfQuickMode .row-fluid .span2 {
+  width: 14.893617021276595%;
+  *width: 14.840425531914894%;
+}
+.bfQuickMode .row-fluid .span1 {
+  width: 6.382978723404255%;
+  *width: 6.329787234042553%;
+}
+.bfQuickMode .row-fluid .offset12 {
+  margin-left: 104.25531914893617%;
+  *margin-left: 104.14893617021275%;
+}
+.bfQuickMode .row-fluid .offset12:first-child {
+  margin-left: 102.12765957446808%;
+  *margin-left: 102.02127659574467%;
+}
+.bfQuickMode .row-fluid .offset11 {
+  margin-left: 95.74468085106382%;
+  *margin-left: 95.6382978723404%;
+}
+.bfQuickMode .row-fluid .offset11:first-child {
+  margin-left: 93.61702127659574%;
+  *margin-left: 93.51063829787232%;
+}
+.bfQuickMode .row-fluid .offset10 {
+  margin-left: 87.23404255319149%;
+  *margin-left: 87.12765957446807%;
+}
+.bfQuickMode .row-fluid .offset10:first-child {
+  margin-left: 85.1063829787234%;
+  *margin-left: 84.99999999999999%;
+}
+.bfQuickMode .row-fluid .offset9 {
+  margin-left: 78.72340425531914%;
+  *margin-left: 78.61702127659572%;
+}
+.bfQuickMode .row-fluid .offset9:first-child {
+  margin-left: 76.59574468085106%;
+  *margin-left: 76.48936170212764%;
+}
+.bfQuickMode .row-fluid .offset8 {
+  margin-left: 70.2127659574468%;
+  *margin-left: 70.10638297872339%;
+}
+.bfQuickMode .row-fluid .offset8:first-child {
+  margin-left: 68.08510638297872%;
+  *margin-left: 67.9787234042553%;
+}
+.bfQuickMode .row-fluid .offset7 {
+  margin-left: 61.70212765957446%;
+  *margin-left: 61.59574468085106%;
+}
+.bfQuickMode .row-fluid .offset7:first-child {
+  margin-left: 59.574468085106375%;
+  *margin-left: 59.46808510638297%;
+}
+.bfQuickMode .row-fluid .offset6 {
+  margin-left: 53.191489361702125%;
+  *margin-left: 53.085106382978715%;
+}
+.bfQuickMode .row-fluid .offset6:first-child {
+  margin-left: 51.063829787234035%;
+  *margin-left: 50.95744680851063%;
+}
+.bfQuickMode .row-fluid .offset5 {
+  margin-left: 44.68085106382979%;
+  *margin-left: 44.57446808510638%;
+}
+.bfQuickMode .row-fluid .offset5:first-child {
+  margin-left: 42.5531914893617%;
+  *margin-left: 42.4468085106383%;
+}
+.bfQuickMode .row-fluid .offset4 {
+  margin-left: 36.170212765957444%;
+  *margin-left: 36.06382978723405%;
+}
+.bfQuickMode .row-fluid .offset4:first-child {
+  margin-left: 34.04255319148936%;
+  *margin-left: 33.93617021276596%;
+}
+.bfQuickMode .row-fluid .offset3 {
+  margin-left: 27.659574468085104%;
+  *margin-left: 27.5531914893617%;
+}
+.bfQuickMode .row-fluid .offset3:first-child {
+  margin-left: 25.53191489361702%;
+  *margin-left: 25.425531914893618%;
+}
+.bfQuickMode .row-fluid .offset2 {
+  margin-left: 19.148936170212764%;
+  *margin-left: 19.04255319148936%;
+}
+.bfQuickMode .row-fluid .offset2:first-child {
+  margin-left: 17.02127659574468%;
+  *margin-left: 16.914893617021278%;
+}
+.bfQuickMode .row-fluid .offset1 {
+  margin-left: 10.638297872340425%;
+  *margin-left: 10.53191489361702%;
+}
+.bfQuickMode .row-fluid .offset1:first-child {
+  margin-left: 8.51063829787234%;
+  *margin-left: 8.404255319148938%;
+}
+.bfQuickMode [class*="span"].hide,
+.bfQuickMode .row-fluid [class*="span"].hide {
+  display: none;
+}
+.bfQuickMode [class*="span"].pull-right,
+.bfQuickMode .row-fluid [class*="span"].pull-right {
+  float: right;
+}
+.bfQuickMode .container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.bfQuickMode .container:before,
+.bfQuickMode .container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bfQuickMode .container:after {
+  clear: both;
+}
+.bfQuickMode .container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+  *zoom: 1;
+}
+.bfQuickMode .container-fluid:before,
+.bfQuickMode .container-fluid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bfQuickMode .container-fluid:after {
+  clear: both;
+}
+.bfQuickMode form {
+  margin: 0 0 20px;
+}
+.bfQuickMode fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.bfQuickMode legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  border: 0;
+}
+.bfQuickMode legend small {
+}
+.bfQuickMode label,
+.bfQuickMode input,
+.bfQuickMode button,
+.bfQuickMode select,
+.bfQuickMode textarea {
+  
+}
+.bfQuickMode input,
+.bfQuickMode button,
+.bfQuickMode select,
+.bfQuickMode textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.bfQuickMode label {
+  display: block;
+  margin-bottom: 5px;
+}
+.bfQuickMode select,
+.bfQuickMode textarea,
+.bfQuickMode input[type="text"],
+.bfQuickMode input[type="password"],
+.bfQuickMode input[type="datetime"],
+.bfQuickMode input[type="datetime-local"],
+.bfQuickMode input[type="date"],
+.bfQuickMode input[type="month"],
+.bfQuickMode input[type="time"],
+.bfQuickMode input[type="week"],
+.bfQuickMode input[type="number"],
+.bfQuickMode input[type="email"],
+.bfQuickMode input[type="url"],
+.bfQuickMode input[type="search"],
+.bfQuickMode input[type="tel"],
+.bfQuickMode input[type="color"],
+.bfQuickMode .uneditable-input {
+  
+}
+.bfQuickMode input,
+.bfQuickMode textarea,
+.bfQuickMode .uneditable-input {
+  width: 206px;
+}
+.bfQuickMode textarea {
+  height: auto;
+}
+.bfQuickMode textarea,
+.bfQuickMode input[type="text"],
+.bfQuickMode input[type="password"],
+.bfQuickMode input[type="datetime"],
+.bfQuickMode input[type="datetime-local"],
+.bfQuickMode input[type="date"],
+.bfQuickMode input[type="month"],
+.bfQuickMode input[type="time"],
+.bfQuickMode input[type="week"],
+.bfQuickMode input[type="number"],
+.bfQuickMode input[type="email"],
+.bfQuickMode input[type="url"],
+.bfQuickMode input[type="search"],
+.bfQuickMode input[type="tel"],
+.bfQuickMode input[type="color"],
+.bfQuickMode .uneditable-input {
+  
+}
+.bfQuickMode textarea:focus,
+.bfQuickMode input[type="text"]:focus,
+.bfQuickMode input[type="password"]:focus,
+.bfQuickMode input[type="datetime"]:focus,
+.bfQuickMode input[type="datetime-local"]:focus,
+.bfQuickMode input[type="date"]:focus,
+.bfQuickMode input[type="month"]:focus,
+.bfQuickMode input[type="time"]:focus,
+.bfQuickMode input[type="week"]:focus,
+.bfQuickMode input[type="number"]:focus,
+.bfQuickMode input[type="email"]:focus,
+.bfQuickMode input[type="url"]:focus,
+.bfQuickMode input[type="search"]:focus,
+.bfQuickMode input[type="tel"]:focus,
+.bfQuickMode input[type="color"]:focus,
+.bfQuickMode .uneditable-input:focus {
+  
+}
+.bfQuickMode input[type="radio"],
+.bfQuickMode input[type="checkbox"] {
+    margin: 4px 0 0;
+  *margin-top: 0;
+  /* IE7 */
+ 
+  margin-top: 1px \9;
+  /* IE8-9 */
+ 
+  line-height: normal;
+  
+}
+.bfQuickMode input[type="file"],
+.bfQuickMode input[type="image"],
+.bfQuickMode input[type="submit"],
+.bfQuickMode input[type="reset"],
+.bfQuickMode input[type="button"],
+.bfQuickMode input[type="radio"],
+.bfQuickMode input[type="checkbox"] {
+  width: auto;
+}
+.bfQuickMode select,
+.bfQuickMode input[type="file"] {
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+ 
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+ 
+  line-height: 30px;
+}
+.bfQuickMode select {
+  width: 220px;
+}
+.bfQuickMode select[multiple],
+.bfQuickMode select[size] {
+  height: auto;
+}
+.bfQuickMode select:focus,
+.bfQuickMode input[type="file"]:focus,
+.bfQuickMode input[type="radio"]:focus,
+.bfQuickMode input[type="checkbox"]:focus {
+  
+}
+.bfQuickMode .uneditable-input,
+.bfQuickMode .uneditable-textarea {
+  
+  cursor: not-allowed;
+}
+.bfQuickMode .uneditable-input {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.bfQuickMode .uneditable-textarea {
+  width: auto;
+  height: auto;
+}
+.bfQuickMode input:-moz-placeholder,
+.bfQuickMode textarea:-moz-placeholder {
+  color: #999999;
+}
+.bfQuickMode input:-ms-input-placeholder,
+.bfQuickMode textarea:-ms-input-placeholder {
+  color: #999999;
+}
+.bfQuickMode input::-webkit-input-placeholder,
+.bfQuickMode textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+.bfQuickMode .radio,
+.bfQuickMode .checkbox {
+  min-height: 20px;
+  padding-left: 20px;
+}
+.bfQuickMode .radio input[type="radio"],
+.bfQuickMode .checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+.bfQuickMode .controls > .radio:first-child,
+.bfQuickMode .controls > .checkbox:first-child {
+  padding-top: 5px;
+}
+.bfQuickMode .radio.inline,
+.bfQuickMode .checkbox.inline {
+  display: inline-block;
+  padding-top: 5px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.bfQuickMode .radio.inline + .radio.inline,
+.bfQuickMode .checkbox.inline + .checkbox.inline {
+  margin-left: 10px;
+}
+.bfQuickMode .input-mini {
+  width: 60px;
+}
+.bfQuickMode .input-small {
+  width: 90px;
+}
+.bfQuickMode .input-medium {
+  width: 150px;
+}
+.bfQuickMode .input-large {
+  width: 210px;
+}
+.bfQuickMode .input-xlarge {
+  width: 270px;
+}
+.bfQuickMode .input-xxlarge {
+  width: 530px;
+}
+.bfQuickMode input[class*="span"],
+.bfQuickMode select[class*="span"],
+.bfQuickMode textarea[class*="span"],
+.bfQuickMode .uneditable-input[class*="span"],
+.bfQuickMode .row-fluid input[class*="span"],
+.bfQuickMode .row-fluid select[class*="span"],
+.bfQuickMode .row-fluid textarea[class*="span"],
+.bfQuickMode .row-fluid .uneditable-input[class*="span"] {
+  float: none;
+  margin-left: 0;
+}
+.bfQuickMode .row-fluid input[class*="span"],
+.bfQuickMode .row-fluid select[class*="span"],
+.bfQuickMode .row-fluid textarea[class*="span"],
+.bfQuickMode .row-fluid .uneditable-input[class*="span"]{
+  display: inline-block;
+}
+.bfQuickMode input,
+.bfQuickMode textarea,
+.bfQuickMode .uneditable-input {
+  margin-left: 0;
+}
+.bfQuickMode .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 20px;
+}
+.bfQuickMode input.span12,
+.bfQuickMode textarea.span12,
+.bfQuickMode .uneditable-input.span12 {
+  width: 926px;
+}
+.bfQuickMode input.span11,
+.bfQuickMode textarea.span11,
+.bfQuickMode .uneditable-input.span11 {
+  width: 846px;
+}
+.bfQuickMode input.span10,
+.bfQuickMode textarea.span10,
+.bfQuickMode .uneditable-input.span10 {
+  width: 766px;
+}
+.bfQuickMode input.span9,
+.bfQuickMode textarea.span9,
+.bfQuickMode .uneditable-input.span9 {
+  width: 686px;
+}
+.bfQuickMode input.span8,
+.bfQuickMode textarea.span8,
+.bfQuickMode .uneditable-input.span8 {
+  width: 606px;
+}
+.bfQuickMode input.span7,
+.bfQuickMode textarea.span7,
+.bfQuickMode .uneditable-input.span7 {
+  width: 526px;
+}
+.bfQuickMode input.span6,
+.bfQuickMode textarea.span6,
+.bfQuickMode .uneditable-input.span6 {
+  width: 446px;
+}
+.bfQuickMode input.span5,
+.bfQuickMode textarea.span5,
+.bfQuickMode .uneditable-input.span5 {
+  width: 366px;
+}
+.bfQuickMode input.span4,
+.bfQuickMode textarea.span4,
+.bfQuickMode .uneditable-input.span4 {
+  width: 286px;
+}
+.bfQuickMode input.span3,
+.bfQuickMode textarea.span3,
+.bfQuickMode .uneditable-input.span3 {
+  width: 206px;
+}
+.bfQuickMode input.span2,
+.bfQuickMode textarea.span2,
+.bfQuickMode .uneditable-input.span2 {
+  width: 126px;
+}
+.bfQuickMode input.span1,
+.bfQuickMode textarea.span1,
+.bfQuickMode .uneditable-input.span1 {
+  width: 46px;
+}
+.bfQuickMode .controls-row {
+  *zoom: 1;
+}
+.bfQuickMode .controls-row:before,
+.bfQuickMode .controls-row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bfQuickMode .controls-row:after {
+  clear: both;
+}
+.bfQuickMode .controls-row [class*="span"],
+.bfQuickMode .row-fluid .controls-row [class*="span"] {
+  float: left;
+}
+.bfQuickMode .controls-row .checkbox[class*="span"],
+.bfQuickMode .controls-row .radio[class*="span"] {
+  
+}
+.bfQuickMode input[disabled],
+.bfQuickMode select[disabled],
+.bfQuickMode textarea[disabled],
+.bfQuickMode input[readonly],
+.bfQuickMode select[readonly],
+.bfQuickMode textarea[readonly] {
+  
+}
+.bfQuickMode input[type="radio"][disabled],
+.bfQuickMode input[type="checkbox"][disabled],
+.bfQuickMode input[type="radio"][readonly],
+.bfQuickMode input[type="checkbox"][readonly] {
+  
+}
+.bfQuickMode .control-group.warning .control-label,
+.bfQuickMode .control-group.warning .help-block,
+.bfQuickMode .control-group.warning .help-inline {
+  
+}
+.bfQuickMode .control-group.warning .checkbox,
+.bfQuickMode .control-group.warning .radio,
+.bfQuickMode .control-group.warning input,
+.bfQuickMode .control-group.warning select,
+.bfQuickMode .control-group.warning textarea {
+  
+}
+.bfQuickMode .control-group.warning input,
+.bfQuickMode .control-group.warning select,
+.bfQuickMode .control-group.warning textarea {
+  
+}
+.bfQuickMode .control-group.warning input:focus,
+.bfQuickMode .control-group.warning select:focus,
+.bfQuickMode .control-group.warning textarea:focus {
+  
+}
+.bfQuickMode .control-group.error .control-label,
+.bfQuickMode .control-group.error .help-block,
+.bfQuickMode .control-group.error .help-inline {
+  
+}
+.bfQuickMode .control-group.error .checkbox,
+.bfQuickMode .control-group.error .radio,
+.bfQuickMode .control-group.error input,
+.bfQuickMode .control-group.error select,
+.bfQuickMode .control-group.error textarea {
+  
+}
+.bfQuickMode .control-group.error input,
+.bfQuickMode .control-group.error select,
+.bfQuickMode .control-group.error textarea {
+  
+}
+.bfQuickMode .control-group.error input:focus,
+.bfQuickMode .control-group.error select:focus,
+.bfQuickMode .control-group.error textarea:focus {
+  
+}
+.bfQuickMode .control-group.success .control-label,
+.bfQuickMode .control-group.success .help-block,
+.bfQuickMode .control-group.success .help-inline {
+  
+}
+.bfQuickMode .control-group.success .checkbox,
+.bfQuickMode .control-group.success .radio,
+.bfQuickMode .control-group.success input,
+.bfQuickMode .control-group.success select,
+.bfQuickMode .control-group.success textarea {
+  
+}
+.bfQuickMode .control-group.success input,
+.bfQuickMode .control-group.success select,
+.bfQuickMode .control-group.success textarea {
+  
+}
+.bfQuickMode .control-group.success input:focus,
+.bfQuickMode .control-group.success select:focus,
+.bfQuickMode .control-group.success textarea:focus {
+  
+}
+.bfQuickMode .control-group.info .control-label,
+.bfQuickMode .control-group.info .help-block,
+.bfQuickMode .control-group.info .help-inline {
+  
+}
+.bfQuickMode .control-group.info .checkbox,
+.bfQuickMode .control-group.info .radio,
+.bfQuickMode .control-group.info input,
+.bfQuickMode .control-group.info select,
+.bfQuickMode .control-group.info textarea {
+ 
+}
+.bfQuickMode .control-group.info input,
+.bfQuickMode .control-group.info select,
+.bfQuickMode .control-group.info textarea {
+  
+}
+.bfQuickMode .control-group.info input:focus,
+.bfQuickMode .control-group.info select:focus,
+.bfQuickMode .control-group.info textarea:focus {
+  
+}
+.bfQuickMode input:focus:invalid,
+.bfQuickMode textarea:focus:invalid,
+.bfQuickMode select:focus:invalid {
+  
+}
+.bfQuickMode input:focus:invalid:focus,
+.bfQuickMode textarea:focus:invalid:focus,
+.bfQuickMode select:focus:invalid:focus {
+  
+}
+.bfQuickMode .form-actions {
+  
+}
+.bfQuickMode .form-actions:before,
+.bfQuickMode .form-actions:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bfQuickMode .form-actions:after {
+  clear: both;
+}
+.bfQuickMode .help-block,
+.bfQuickMode .help-inline {
+  color: #595959;
+}
+.bfQuickMode .help-block {
+  display: block;
+  margin-bottom: 10px;
+}
+.bfQuickMode .help-inline {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+ 
+  *zoom: 1;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.bfQuickMode input.search-query {
+  padding-right: 14px;
+  padding-right: 4px \9;
+  padding-left: 14px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+  margin-bottom: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.bfQuickMode .form-search input,
+.bfQuickMode .form-inline input,
+.bfQuickMode .form-horizontal input,
+.bfQuickMode .form-search textarea,
+.bfQuickMode .form-inline textarea,
+.bfQuickMode .form-horizontal textarea,
+.bfQuickMode .form-search select,
+.bfQuickMode .form-inline select,
+.bfQuickMode .form-horizontal select,
+.bfQuickMode .form-search .help-inline,
+.bfQuickMode .form-inline .help-inline,
+.bfQuickMode .form-horizontal .help-inline,
+.bfQuickMode .form-search .uneditable-input,
+.bfQuickMode .form-inline .uneditable-input,
+.bfQuickMode .form-horizontal .uneditable-input{
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+ 
+  *zoom: 1;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.bfQuickMode .form-search .hide,
+.bfQuickMode .form-inline .hide,
+.bfQuickMode .form-horizontal .hide {
+  display: none;
+}
+.bfQuickMode .form-search label,
+.bfQuickMode .form-inline label,
+.bfQuickMode .form-search .btn-group,
+.bfQuickMode .form-inline .btn-group {
+  display: inline-block;
+}
+.bfQuickMode .form-search .radio,
+.bfQuickMode .form-search .checkbox,
+.bfQuickMode .form-inline .radio,
+.bfQuickMode .form-inline .checkbox {
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.bfQuickMode .form-search .radio input[type="radio"],
+.bfQuickMode .form-search .checkbox input[type="checkbox"],
+.bfQuickMode .form-inline .radio input[type="radio"],
+.bfQuickMode .form-inline .checkbox input[type="checkbox"] {
+  float: left;
+  margin-right: 3px;
+  margin-left: 0;
+}
+.bfQuickMode .control-group {
+  margin-bottom: 10px;
+}
+.bfQuickMode legend + .control-group {
+  margin-top: 20px;
+  -webkit-margin-top-collapse: separate;
+}
+.bfQuickMode .form-horizontal .control-group {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+.bfQuickMode .form-horizontal .control-group:before,
+.bfQuickMode .form-horizontal .control-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bfQuickMode .form-horizontal .control-group:after {
+  clear: both;
+}
+.bfQuickMode .form-horizontal .control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
+}
+.bfQuickMode .form-horizontal .controls {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 180px;
+  *margin-left: 0;
+}
+.bfQuickMode .form-horizontal .controls:first-child {
+  *padding-left: 180px;
+}
+.bfQuickMode .form-horizontal .help-block {
+  margin-bottom: 0;
+}
+.bfQuickMode .form-horizontal input + .help-block,
+.bfQuickMode .form-horizontal select + .help-block,
+.bfQuickMode .form-horizontal textarea + .help-block,
+.bfQuickMode .form-horizontal .uneditable-input + .help-block{
+  
+}
+.bfQuickMode .form-horizontal .form-actions {
+  
+}
+.bfQuickMode .alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.bfQuickMode .alert,
+.bfQuickMode .alert h4 {
+  color: #c09853;
+}
+.bfQuickMode .alert h4 {
+  margin: 0;
+}
+.bfQuickMode .alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 20px;
+}
+.bfQuickMode .alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.bfQuickMode .alert-success h4 {
+  color: #468847;
+}
+.bfQuickMode .alert-danger,
+.bfQuickMode .alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+.bfQuickMode .alert-danger h4,
+.bfQuickMode .alert-error h4 {
+  color: #b94a48;
+}
+.bfQuickMode .alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.bfQuickMode .alert-info h4 {
+  color: #3a87ad;
+}
+.bfQuickMode .alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.bfQuickMode .alert-block > p,
+.bfQuickMode .alert-block > ul {
+  margin-bottom: 0;
+}
+.bfQuickMode .alert-block p + p {
+  margin-top: 5px;
+}
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-moz-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-ms-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.bfQuickMode .progress {
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.bfQuickMode .progress .bar {
+  width: 0%;
+  height: 100%;
+  color: #ffffff;
+  float: left;
+  background-color: #aaaaaa;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: width 0.6s ease;
+  -moz-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+.bfQuickMode .progress .bar + .bar {
+  -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+.bfQuickMode .progress-striped .bar {
+  background-color: #149bdf;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 40px 40px;
+  -moz-background-size: 40px 40px;
+  -o-background-size: 40px 40px;
+  background-size: 40px 40px;
+}
+.bfQuickMode .progress.active .bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -moz-animation: progress-bar-stripes 2s linear infinite;
+  -ms-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+.bfQuickMode .progress-danger .bar,
+.bfQuickMode .progress .bar-danger {
+  background-color: #dd514c;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: linear-gradient(to bottom, #ee5f5b, #c43c35);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffc43c35', GradientType=0);
+}
+.bfQuickMode .progress-danger.progress-striped .bar,
+.bfQuickMode .progress-striped .bar-danger {
+  background-color: #ee5f5b;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.bfQuickMode .progress-success .bar,
+.bfQuickMode .progress .bar-success {
+  background-color: #5eb95e;
+  background-image: -moz-linear-gradient(top, #62c462, #57a957);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#57a957));
+  background-image: -webkit-linear-gradient(top, #62c462, #57a957);
+  background-image: -o-linear-gradient(top, #62c462, #57a957);
+  background-image: linear-gradient(to bottom, #62c462, #57a957);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff57a957', GradientType=0);
+}
+.bfQuickMode .progress-success.progress-striped .bar,
+.bfQuickMode .progress-striped .bar-success {
+  background-color: #62c462;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.bfQuickMode .progress-info .bar,
+.bfQuickMode .progress .bar-info {
+  background-color: #4bb1cf;
+  background-image: -moz-linear-gradient(top, #5bc0de, #339bb9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#339bb9));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #339bb9);
+  background-image: -o-linear-gradient(top, #5bc0de, #339bb9);
+  background-image: linear-gradient(to bottom, #5bc0de, #339bb9);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff339bb9', GradientType=0);
+}
+.bfQuickMode .progress-info.progress-striped .bar,
+.bfQuickMode .progress-striped .bar-info {
+  background-color: #5bc0de;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.bfQuickMode .progress-warning .bar,
+.bfQuickMode .progress .bar-warning {
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+}
+.bfQuickMode .progress-warning.progress-striped .bar,
+.bfQuickMode .progress-striped .bar-warning {
+  background-color: #fbb450;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+@-ms-viewport  {
+  width: device-width;
+}
+.bfQuickMode .hidden {
+  display: none;
+  visibility: hidden;
+}
+.bfQuickMode .visible-phone {
+  display: none !important;
+}
+.bfQuickMode .visible-tablet {
+  display: none !important;
+}
+.bfQuickMode .hidden-desktop {
+  display: none !important;
+}
+.bfQuickMode .visible-desktop {
+  display: inherit !important;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .bfQuickMode .hidden-desktop {
+    display: inherit !important;
+  }
+  .bfQuickMode .visible-desktop {
+    display: none !important ;
+  }
+  .bfQuickMode .visible-tablet {
+    display: inherit !important;
+  }
+  .bfQuickMode .hidden-tablet {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .bfQuickMode .hidden-desktop {
+    display: inherit !important;
+  }
+  .bfQuickMode .visible-desktop {
+    display: none !important;
+  }
+  .bfQuickMode .visible-phone {
+    display: inherit !important;
+  }
+  .bfQuickMode .hidden-phone {
+    display: none !important;
+  }
+}
+.bfQuickMode .visible-print {
+  display: none !important;
+}
+@media print {
+  .bfQuickMode .visible-print {
+    display: inherit !important;
+  }
+  .bfQuickMode .hidden-print {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .bfQuickMode body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bfQuickMode .navbar-fixed-top,
+  .bfQuickMode .navbar-fixed-bottom,
+  .bfQuickMode .navbar-static-top {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .bfQuickMode .container-fluid {
+    padding: 0;
+  }
+  .bfQuickMode .dl-horizontal dt {
+    float: none;
+    clear: none;
+    width: auto;
+    text-align: left;
+  }
+  .bfQuickMode .dl-horizontal dd {
+    margin-left: 0;
+  }
+  .bfQuickMode .container {
+    width: auto;
+  }
+  .bfQuickMode .row-fluid {
+    width: 100%;
+  }
+  .bfQuickMode .row,
+  .bfQuickMode .thumbnails {
+    margin-left: 0;
+  }
+  .bfQuickMode .thumbnails > li {
+    float: none;
+    margin-left: 0;
+  }
+  .bfQuickMode [class*="span"],
+  .bfQuickMode .uneditable-input[class*="span"],
+  .bfQuickMode .row-fluid [class*="span"] {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .bfQuickMode .span12,
+  .bfQuickMode .row-fluid .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .bfQuickMode .row-fluid [class*="offset"]:first-child {
+    margin-left: 0;
+  }
+  .bfQuickMode .input-large,
+  .bfQuickMode .input-xlarge,
+  .bfQuickMode .input-xxlarge,
+  .bfQuickMode input[class*="span"],
+  .bfQuickMode select[class*="span"],
+  .bfQuickMode textarea[class*="span"],
+  .bfQuickMode .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .bfQuickMode .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 0;
+  }
+  .bfQuickMode .modal {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    margin: 0;
+  }
+  .bfQuickMode .modal.fade {
+    top: -100px;
+  }
+  .bfQuickMode .modal.fade.in {
+    top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .bfQuickMode .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  .bfQuickMode .page-header h1 small {
+    display: block;
+    line-height: 20px;
+  }
+  .bfQuickMode input[type="checkbox"],
+  .bfQuickMode input[type="radio"] {
+  }
+  .bfQuickMode .form-horizontal .control-label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left;
+  }
+  .bfQuickMode .form-horizontal .controls {
+    margin-left: 0;
+  }
+  .bfQuickMode .form-horizontal .control-list {
+    padding-top: 0;
+  }
+  .bfQuickMode .form-horizontal .form-actions {
+    
+  }
+  .bfQuickMode .media .pull-left,
+  .bfQuickMode .media .pull-right {
+    float: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .bfQuickMode .media-object {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .bfQuickMode .modal {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  .bfQuickMode .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
+  .bfQuickMode .carousel-caption {
+    position: static;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .bfQuickMode .row {
+    margin-left: -20px;
+    *zoom: 1;
+  }
+  .bfQuickMode .row:before,
+  .bfQuickMode .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .bfQuickMode .row:after {
+    clear: both;
+  }
+  .bfQuickMode [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+  .bfQuickMode .container,
+  .bfQuickMode .navbar-static-top .container,
+  .bfQuickMode .navbar-fixed-top .container,
+  .bfQuickMode .navbar-fixed-bottom .container {
+    width: 724px;
+  }
+  .bfQuickMode .span12 {
+    width: 724px;
+  }
+  .bfQuickMode .span11 {
+    width: 662px;
+  }
+  .bfQuickMode .span10 {
+    width: 600px;
+  }
+  .bfQuickMode .span9 {
+    width: 538px;
+  }
+  .bfQuickMode .span8 {
+    width: 476px;
+  }
+  .bfQuickMode .span7 {
+    width: 414px;
+  }
+  .bfQuickMode .span6 {
+    width: 352px;
+  }
+  .bfQuickMode .span5 {
+    width: 290px;
+  }
+  .bfQuickMode .span4 {
+    width: 228px;
+  }
+  .bfQuickMode .span3 {
+    width: 166px;
+  }
+  .bfQuickMode .span2 {
+    width: 104px;
+  }
+  .bfQuickMode .span1 {
+    width: 42px;
+  }
+  .bfQuickMode .offset12 {
+    margin-left: 764px;
+  }
+  .bfQuickMode .offset11 {
+    margin-left: 702px;
+  }
+  .bfQuickMode .offset10 {
+    margin-left: 640px;
+  }
+  .bfQuickMode .offset9 {
+    margin-left: 578px;
+  }
+  .bfQuickMode .offset8 {
+    margin-left: 516px;
+  }
+  .bfQuickMode .offset7 {
+    margin-left: 454px;
+  }
+  .bfQuickMode .offset6 {
+    margin-left: 392px;
+  }
+  .bfQuickMode .offset5 {
+    margin-left: 330px;
+  }
+  .bfQuickMode .offset4 {
+    margin-left: 268px;
+  }
+  .bfQuickMode .offset3 {
+    margin-left: 206px;
+  }
+  .bfQuickMode .offset2 {
+    margin-left: 144px;
+  }
+  .bfQuickMode .offset1 {
+    margin-left: 82px;
+  }
+  .bfQuickMode .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  .bfQuickMode .row-fluid:before,
+  .bfQuickMode .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .bfQuickMode .row-fluid:after {
+    clear: both;
+  }
+  .bfQuickMode .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 2.7624309392265194%;
+    *margin-left: 2.709239449864817%;
+  }
+  .bfQuickMode .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  .bfQuickMode .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.7624309392265194%;
+  }
+  .bfQuickMode .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94680851063829%;
+  }
+  .bfQuickMode .row-fluid .span11 {
+    width: 91.43646408839778%;
+    *width: 91.38327259903608%;
+  }
+  .bfQuickMode .row-fluid .span10 {
+    width: 82.87292817679558%;
+    *width: 82.81973668743387%;
+  }
+  .bfQuickMode .row-fluid .span9 {
+    width: 74.30939226519337%;
+    *width: 74.25620077583166%;
+  }
+  .bfQuickMode .row-fluid .span8 {
+    width: 65.74585635359117%;
+    *width: 65.69266486422946%;
+  }
+  .bfQuickMode .row-fluid .span7 {
+    width: 57.18232044198895%;
+    *width: 57.12912895262725%;
+  }
+  .bfQuickMode .row-fluid .span6 {
+    width: 48.61878453038674%;
+    *width: 48.56559304102504%;
+  }
+  .bfQuickMode .row-fluid .span5 {
+    width: 40.05524861878453%;
+    *width: 40.00205712942283%;
+  }
+  .bfQuickMode .row-fluid .span4 {
+    width: 31.491712707182323%;
+    *width: 31.43852121782062%;
+  }
+  .bfQuickMode .row-fluid .span3 {
+    width: 22.92817679558011%;
+    *width: 22.87498530621841%;
+  }
+  .bfQuickMode .row-fluid .span2 {
+    width: 14.3646408839779%;
+    *width: 14.311449394616199%;
+  }
+  .bfQuickMode .row-fluid .span1 {
+    width: 5.801104972375691%;
+    *width: 5.747913483013988%;
+  }
+  .bfQuickMode .row-fluid .offset12 {
+    margin-left: 105.52486187845304%;
+    *margin-left: 105.41847889972962%;
+  }
+  .bfQuickMode .row-fluid .offset12:first-child {
+    margin-left: 102.76243093922652%;
+    *margin-left: 102.6560479605031%;
+  }
+  .bfQuickMode .row-fluid .offset11 {
+    margin-left: 96.96132596685082%;
+    *margin-left: 96.8549429881274%;
+  }
+  .bfQuickMode .row-fluid .offset11:first-child {
+    margin-left: 94.1988950276243%;
+    *margin-left: 94.09251204890089%;
+  }
+  .bfQuickMode .row-fluid .offset10 {
+    margin-left: 88.39779005524862%;
+    *margin-left: 88.2914070765252%;
+  }
+  .bfQuickMode .row-fluid .offset10:first-child {
+    margin-left: 85.6353591160221%;
+    *margin-left: 85.52897613729868%;
+  }
+  .bfQuickMode .row-fluid .offset9 {
+    margin-left: 79.8342541436464%;
+    *margin-left: 79.72787116492299%;
+  }
+  .bfQuickMode .row-fluid .offset9:first-child {
+    margin-left: 77.07182320441989%;
+    *margin-left: 76.96544022569647%;
+  }
+  .bfQuickMode .row-fluid .offset8 {
+    margin-left: 71.2707182320442%;
+    *margin-left: 71.16433525332079%;
+  }
+  .bfQuickMode .row-fluid .offset8:first-child {
+    margin-left: 68.50828729281768%;
+    *margin-left: 68.40190431409427%;
+  }
+  .bfQuickMode .row-fluid .offset7 {
+    margin-left: 62.70718232044199%;
+    *margin-left: 62.600799341718584%;
+  }
+  .bfQuickMode .row-fluid .offset7:first-child {
+    margin-left: 59.94475138121547%;
+    *margin-left: 59.838368402492065%;
+  }
+  .bfQuickMode .row-fluid .offset6 {
+    margin-left: 54.14364640883978%;
+    *margin-left: 54.037263430116376%;
+  }
+  .bfQuickMode .row-fluid .offset6:first-child {
+    margin-left: 51.38121546961326%;
+    *margin-left: 51.27483249088986%;
+  }
+  .bfQuickMode .row-fluid .offset5 {
+    margin-left: 45.58011049723757%;
+    *margin-left: 45.47372751851417%;
+  }
+  .bfQuickMode .row-fluid .offset5:first-child {
+    margin-left: 42.81767955801105%;
+    *margin-left: 42.71129657928765%;
+  }
+  .bfQuickMode .row-fluid .offset4 {
+    margin-left: 37.01657458563536%;
+    *margin-left: 36.91019160691196%;
+  }
+  .bfQuickMode .row-fluid .offset4:first-child {
+    margin-left: 34.25414364640884%;
+    *margin-left: 34.14776066768544%;
+  }
+  .bfQuickMode .row-fluid .offset3 {
+    margin-left: 28.45303867403315%;
+    *margin-left: 28.346655695309746%;
+  }
+  .bfQuickMode .row-fluid .offset3:first-child {
+    margin-left: 25.69060773480663%;
+    *margin-left: 25.584224756083227%;
+  }
+  .bfQuickMode .row-fluid .offset2 {
+    margin-left: 19.88950276243094%;
+    *margin-left: 19.783119783707537%;
+  }
+  .bfQuickMode .row-fluid .offset2:first-child {
+    margin-left: 17.12707182320442%;
+    *margin-left: 17.02068884448102%;
+  }
+  .bfQuickMode .row-fluid .offset1 {
+    margin-left: 11.32596685082873%;
+    *margin-left: 11.219583872105325%;
+  }
+  .bfQuickMode .row-fluid .offset1:first-child {
+    margin-left: 8.56353591160221%;
+    *margin-left: 8.457152932878806%;
+  }
+  .bfQuickMode input,
+  .bfQuickMode textarea,
+  .bfQuickMode .uneditable-input {
+    margin-left: 0;
+  }
+  .bfQuickMode .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 20px;
+  }
+  .bfQuickMode input.span12,
+  .bfQuickMode textarea.span12,
+  .bfQuickMode .uneditable-input.span12 {
+    width: 710px;
+  }
+  .bfQuickMode input.span11,
+  .bfQuickMode textarea.span11,
+  .bfQuickMode .uneditable-input.span11 {
+    width: 648px;
+  }
+  .bfQuickMode input.span10,
+  .bfQuickMode textarea.span10,
+  .bfQuickMode .uneditable-input.span10 {
+    width: 586px;
+  }
+  .bfQuickMode input.span9,
+  .bfQuickMode textarea.span9,
+  .bfQuickMode .uneditable-input.span9 {
+    width: 524px;
+  }
+  .bfQuickMode input.span8,
+  .bfQuickMode textarea.span8,
+  .bfQuickMode .uneditable-input.span8 {
+    width: 462px;
+  }
+  .bfQuickMode input.span7,
+  .bfQuickMode textarea.span7,
+  .bfQuickMode .uneditable-input.span7 {
+    width: 400px;
+  }
+  .bfQuickMode input.span6,
+  .bfQuickMode textarea.span6,
+  .bfQuickMode .uneditable-input.span6 {
+    width: 338px;
+  }
+  .bfQuickMode input.span5,
+  .bfQuickMode textarea.span5,
+  .bfQuickMode .uneditable-input.span5 {
+    width: 276px;
+  }
+  .bfQuickMode input.span4,
+  .bfQuickMode textarea.span4,
+  .bfQuickMode .uneditable-input.span4 {
+    width: 214px;
+  }
+  .bfQuickMode input.span3,
+  .bfQuickMode textarea.span3,
+  .bfQuickMode .uneditable-input.span3 {
+    width: 152px;
+  }
+  .bfQuickMode input.span2,
+  .bfQuickMode textarea.span2,
+  .bfQuickMode .uneditable-input.span2 {
+    width: 90px;
+  }
+  .bfQuickMode input.span1,
+  .bfQuickMode textarea.span1,
+  .bfQuickMode .uneditable-input.span1 {
+    width: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .bfQuickMode .row {
+    margin-left: -30px;
+    *zoom: 1;
+  }
+  .bfQuickMode .row:before,
+  .bfQuickMode .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .bfQuickMode .row:after {
+    clear: both;
+  }
+  .bfQuickMode [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+  }
+  .bfQuickMode .container,
+  .bfQuickMode .navbar-static-top .container,
+  .bfQuickMode .navbar-fixed-top .container,
+  .bfQuickMode .navbar-fixed-bottom .container {
+    width: 1170px;
+  }
+  .bfQuickMode .span12 {
+    width: 1170px;
+  }
+  .bfQuickMode .span11 {
+    width: 1070px;
+  }
+  .bfQuickMode .span10 {
+    width: 970px;
+  }
+  .bfQuickMode .span9 {
+    width: 870px;
+  }
+  .bfQuickMode .span8 {
+    width: 770px;
+  }
+  .bfQuickMode .span7 {
+    width: 670px;
+  }
+  .bfQuickMode .span6 {
+    width: 570px;
+  }
+  .bfQuickMode .span5 {
+    width: 470px;
+  }
+  .bfQuickMode .span4 {
+    width: 370px;
+  }
+  .bfQuickMode .span3 {
+    width: 270px;
+  }
+  .bfQuickMode .span2 {
+    width: 170px;
+  }
+  .bfQuickMode .span1 {
+    width: 70px;
+  }
+  .bfQuickMode .offset12 {
+    margin-left: 1230px;
+  }
+  .bfQuickMode .offset11 {
+    margin-left: 1130px;
+  }
+  .bfQuickMode .offset10 {
+    margin-left: 1030px;
+  }
+  .bfQuickMode .offset9 {
+    margin-left: 930px;
+  }
+  .bfQuickMode .offset8 {
+    margin-left: 830px;
+  }
+  .bfQuickMode .offset7 {
+    margin-left: 730px;
+  }
+  .bfQuickMode .offset6 {
+    margin-left: 630px;
+  }
+  .bfQuickMode .offset5 {
+    margin-left: 530px;
+  }
+  .bfQuickMode .offset4 {
+    margin-left: 430px;
+  }
+  .bfQuickMode .offset3 {
+    margin-left: 330px;
+  }
+  .bfQuickMode .offset2 {
+    margin-left: 230px;
+  }
+  .bfQuickMode .offset1 {
+    margin-left: 130px;
+  }
+  .bfQuickMode .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  .bfQuickMode .row-fluid:before,
+  .bfQuickMode .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .bfQuickMode .row-fluid:after {
+    clear: both;
+  }
+  .bfQuickMode .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 2.564102564102564%;
+    *margin-left: 2.5109110747408616%;
+  }
+  .bfQuickMode .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  .bfQuickMode .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.564102564102564%;
+  }
+  .bfQuickMode .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94680851063829%;
+  }
+  .bfQuickMode .row-fluid .span11 {
+    width: 91.45299145299145%;
+    *width: 91.39979996362975%;
+  }
+  .bfQuickMode .row-fluid .span10 {
+    width: 82.90598290598291%;
+    *width: 82.8527914166212%;
+  }
+  .bfQuickMode .row-fluid .span9 {
+    width: 74.35897435897436%;
+    *width: 74.30578286961266%;
+  }
+  .bfQuickMode .row-fluid .span8 {
+    width: 65.81196581196582%;
+    *width: 65.75877432260411%;
+  }
+  .bfQuickMode .row-fluid .span7 {
+    width: 57.26495726495726%;
+    *width: 57.21176577559556%;
+  }
+  .bfQuickMode .row-fluid .span6 {
+    width: 48.717948717948715%;
+    *width: 48.664757228587014%;
+  }
+  .bfQuickMode .row-fluid .span5 {
+    width: 40.17094017094017%;
+    *width: 40.11774868157847%;
+  }
+  .bfQuickMode .row-fluid .span4 {
+    width: 31.623931623931625%;
+    *width: 31.570740134569924%;
+  }
+  .bfQuickMode .row-fluid .span3 {
+    width: 23.076923076923077%;
+    *width: 23.023731587561375%;
+  }
+  .bfQuickMode .row-fluid .span2 {
+    width: 14.52991452991453%;
+    *width: 14.476723040552828%;
+  }
+  .bfQuickMode .row-fluid .span1 {
+    width: 5.982905982905983%;
+    *width: 5.929714493544281%;
+  }
+  .bfQuickMode .row-fluid .offset12 {
+    margin-left: 105.12820512820512%;
+    *margin-left: 105.02182214948171%;
+  }
+  .bfQuickMode .row-fluid .offset12:first-child {
+    margin-left: 102.56410256410257%;
+    *margin-left: 102.45771958537915%;
+  }
+  .bfQuickMode .row-fluid .offset11 {
+    margin-left: 96.58119658119658%;
+    *margin-left: 96.47481360247316%;
+  }
+  .bfQuickMode .row-fluid .offset11:first-child {
+    margin-left: 94.01709401709402%;
+    *margin-left: 93.91071103837061%;
+  }
+  .bfQuickMode .row-fluid .offset10 {
+    margin-left: 88.03418803418803%;
+    *margin-left: 87.92780505546462%;
+  }
+  .bfQuickMode .row-fluid .offset10:first-child {
+    margin-left: 85.47008547008548%;
+    *margin-left: 85.36370249136206%;
+  }
+  .bfQuickMode .row-fluid .offset9 {
+    margin-left: 79.48717948717949%;
+    *margin-left: 79.38079650845607%;
+  }
+  .bfQuickMode .row-fluid .offset9:first-child {
+    margin-left: 76.92307692307693%;
+    *margin-left: 76.81669394435352%;
+  }
+  .bfQuickMode .row-fluid .offset8 {
+    margin-left: 70.94017094017094%;
+    *margin-left: 70.83378796144753%;
+  }
+  .bfQuickMode .row-fluid .offset8:first-child {
+    margin-left: 68.37606837606839%;
+    *margin-left: 68.26968539734497%;
+  }
+  .bfQuickMode .row-fluid .offset7 {
+    margin-left: 62.393162393162385%;
+    *margin-left: 62.28677941443899%;
+  }
+  .bfQuickMode .row-fluid .offset7:first-child {
+    margin-left: 59.82905982905982%;
+    *margin-left: 59.72267685033642%;
+  }
+  .bfQuickMode .row-fluid .offset6 {
+    margin-left: 53.84615384615384%;
+    *margin-left: 53.739770867430444%;
+  }
+  .bfQuickMode .row-fluid .offset6:first-child {
+    margin-left: 51.28205128205128%;
+    *margin-left: 51.175668303327875%;
+  }
+  .bfQuickMode .row-fluid .offset5 {
+    margin-left: 45.299145299145295%;
+    *margin-left: 45.1927623204219%;
+  }
+  .bfQuickMode .row-fluid .offset5:first-child {
+    margin-left: 42.73504273504273%;
+    *margin-left: 42.62865975631933%;
+  }
+  .bfQuickMode .row-fluid .offset4 {
+    margin-left: 36.75213675213675%;
+    *margin-left: 36.645753773413354%;
+  }
+  .bfQuickMode .row-fluid .offset4:first-child {
+    margin-left: 34.18803418803419%;
+    *margin-left: 34.081651209310785%;
+  }
+  .bfQuickMode .row-fluid .offset3 {
+    margin-left: 28.205128205128204%;
+    *margin-left: 28.0987452264048%;
+  }
+  .bfQuickMode .row-fluid .offset3:first-child {
+    margin-left: 25.641025641025642%;
+    *margin-left: 25.53464266230224%;
+  }
+  .bfQuickMode .row-fluid .offset2 {
+    margin-left: 19.65811965811966%;
+    *margin-left: 19.551736679396257%;
+  }
+  .bfQuickMode .row-fluid .offset2:first-child {
+    margin-left: 17.094017094017094%;
+    *margin-left: 16.98763411529369%;
+  }
+  .bfQuickMode .row-fluid .offset1 {
+    margin-left: 11.11111111111111%;
+    *margin-left: 11.004728132387708%;
+  }
+  .bfQuickMode .row-fluid .offset1:first-child {
+    margin-left: 8.547008547008547%;
+    *margin-left: 8.440625568285142%;
+  }
+  .bfQuickMode input,
+  .bfQuickMode textarea,
+  .bfQuickMode .uneditable-input {
+    margin-left: 0;
+  }
+  .bfQuickMode .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 30px;
+  }
+  .bfQuickMode input.span12,
+  .bfQuickMode textarea.span12,
+  .bfQuickMode .uneditable-input.span12 {
+    width: 1156px;
+  }
+  .bfQuickMode input.span11,
+  .bfQuickMode textarea.span11,
+  .bfQuickMode .uneditable-input.span11 {
+    width: 1056px;
+  }
+  .bfQuickMode input.span10,
+  .bfQuickMode textarea.span10,
+  .bfQuickMode .uneditable-input.span10 {
+    width: 956px;
+  }
+  .bfQuickMode input.span9,
+  .bfQuickMode textarea.span9,
+  .bfQuickMode .uneditable-input.span9 {
+    width: 856px;
+  }
+  .bfQuickMode input.span8,
+  .bfQuickMode textarea.span8,
+  .bfQuickMode .uneditable-input.span8 {
+    width: 756px;
+  }
+  .bfQuickMode input.span7,
+  .bfQuickMode textarea.span7,
+  .bfQuickMode .uneditable-input.span7 {
+    width: 656px;
+  }
+  .bfQuickMode input.span6,
+  .bfQuickMode textarea.span6,
+  .bfQuickMode .uneditable-input.span6 {
+    width: 556px;
+  }
+  .bfQuickMode input.span5,
+  .bfQuickMode textarea.span5,
+  .bfQuickMode .uneditable-input.span5 {
+    width: 456px;
+  }
+  .bfQuickMode input.span4,
+  .bfQuickMode textarea.span4,
+  .bfQuickMode .uneditable-input.span4 {
+    width: 356px;
+  }
+  .bfQuickMode input.span3,
+  .bfQuickMode textarea.span3,
+  .bfQuickMode .uneditable-input.span3 {
+    width: 256px;
+  }
+  .bfQuickMode input.span2,
+  .bfQuickMode textarea.span2,
+  .bfQuickMode .uneditable-input.span2 {
+    width: 156px;
+  }
+  .bfQuickMode input.span1,
+  .bfQuickMode textarea.span1,
+  .bfQuickMode .uneditable-input.span1 {
+    width: 56px;
+  }
+  .bfQuickMode .thumbnails {
+    margin-left: -30px;
+  }
+  .bfQuickMode .thumbnails > li {
+    margin-left: 30px;
+  }
+  .bfQuickMode .row-fluid .thumbnails {
+    margin-left: 0;
+  }
+}

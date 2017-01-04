@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="j2store" method="upgrade">
+	<name>Paymill</name>
+	<version>1.1</version>
+	<creationDate>June 2014</creationDate>
+	<author>j2store.org</author>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>http://j2store.org</authorUrl>
+	<copyright>2014 Weblogicx India Private Limited</copyright>
+	<license>GNU General Public License v2 or later</license>
+	<description>J2STORE_PAYMILL_PAYMENT_DESC</description>
+	<scriptfile>script.payment_paymill.php</scriptfile>
+	<files>
+		<filename plugin="payment_paymill">payment_paymill.php</filename>
+		<filename>index.html</filename>
+		<folder>library</folder>
+		<folder>payment_paymill</folder>  	
+	</files>
+	<languages>
+        <language tag="en-GB">languages/en-GB.plg_j2store_payment_paymill.ini</language>        
+    </languages>	
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+		  <field name="display_name" type="text" size="30" default="" label="j2store_plugin_display_name" description="j2store_plugin_display_name_desc"/>
+		  <field name="display_image" type="media" label="j2store_plugin_display_image" description="j2store_plugin_display_image_desc"/>
+		  <field name="registration" type="paymillregistration" size="30" default="" label="j2store_plugin_paymill_registration" description="j2store_plugin_paymill_registration_desc" addfieldpath="plugins/j2store/payment_paymill/payment_paymill/tmpl" />
+				<field name="live_private_key" type="text" size="30" default="" label="J2STORE_PAYMILL_PRIVATE_KEY" description="J2STORE_PAYMILL_PRIVATE_KEY_DESC"/>
+				<field name="live_public_key" type="text" size="30" default="" label="J2STORE_PAYMILL_PUBLIC_KEY" description="J2STORE_PAYMILL_PUBLIC_KEY_DESC"/>
+			
+			 <field type="spacer" />
+			 <field name="sandbox" type="radio" default="0" label="j2store_paymill_use_sandbox" description="j2store_paymill_use_sandbox_desc">
+          <option value="0">J2STORE_NO</option>
+          <option value="1">J2STORE_YES</option>
+        </field>
+        	
+			<field type="spacer" />	
+				<field name="test_private_key" type="text" size="30" default="" label="J2STORE_PAYMILL_TEST_PRIVATE_KEY" description="J2STORE_PAYMILL_TEST_PRIVATE_KEY_DESC" />
+				<field name="test_public_key" type="text" size="30" default="" label="J2STORE_PAYMILL_TEST_PUBLIC_KEY" description="J2STORE_PAYMILL_TEST_PUBLIC_KEY_DESC"/>
+                
+               <field type="spacer" />
+        
+        <field name="onselection" type="textarea" cols="10" rows="5" default="" label="j2store_on_selection_label" description="j2store_on_selection_desc"/>
+        <field name="onbeforepayment" type="textarea" cols="10" rows="5" default="" label="j2store_on_before_payment_label" description="j2store_on_before_payment_desc"/>
+        <field name="onafterpayment" type="textarea" cols="10" rows="5" default="" label="j2store_on_after_payment_label" description="j2store_on_after_payment_desc"/>
+        <field name="onerrorpayment" type="textarea" cols="10" rows="5" default="" label="j2store_on_error_payment_label" description="j2store_on_error_payment_desc"/>
+        <field name="oncancelpayment" type="textarea" cols="10" rows="5" default="" label="j2store_on_cancel_payment_label" description="j2store_on_cancel_payment_desc"/>
+        
+        <field type="spacer" />
+        
+        <field name="button_text" type="text" size="50" default="J2STORE_PLACE_ORDER" label="j2store_button_text_label" description="j2store_button_text_desc" />            
+            
+		</fieldset>
+	</fields>
+</config>				
+</extension>

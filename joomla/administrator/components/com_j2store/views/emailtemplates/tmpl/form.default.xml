@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* @com_j2store - J2Store
+* @author    Sasi varna kumar - Weblogicx India http://www.weblogicxindia.com
+* @copyright Copyright (C) 2014 - 19 Weblogicxindia.com. All Rights Reserved.
+* @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+* @Websites: http://j2store.org
+* @Technical Support:  Forum - http://j2store.org/forum/index.html
+ -->
+<form
+  type="browse"
+  show_header="1"
+  show_filters="1"
+  show_pagination="1"
+  norows_placeholder="J2STORE_NO_ITEMS_FOUND"
+  >
+
+  <headerset>
+  	<header name="ordering" type="ordering" sortable="true"  />
+    <header name="j2store_emailtemplate_id" type="rowselect" tdwidth="20" label="J2STORE_EMAILTEMPLATE_ID"/>
+    <header name="receiver_type" sortable="true" label="J2STORE_EMAILTEMPLATE_RECEIVER"/>
+    <header name="language"  sortable="true" translate="false"  label="JFIELD_LANGUAGE_LABEL"/>
+    <header name="orderstatus_id"  sortable="true" translate="false"  label="J2STORE_ORDERSTATUS_NAME"/>
+    <header name="group_id" sortable="true" translate="false"  label="J2STORE_EMAILTEMPLATE_GROUPS"/>
+    <header name="paymentmethod" type="fieldsearchable" sortable="true" translate="false" label="J2STORE_EMAILTEMPLATE_PAYMENTMETHODS"/>
+    <header name="subject" type="fieldsearchable" sortable="true" translate="false" label="J2STORE_EMAILTEMPLATE_SUBJECT_LABEL"/>
+    <header name="enabled" type="published" sortable="true" tdwidth="8%" />
+  </headerset>
+
+  <fieldset name="items" addfieldpath="administrator/components/com_j2store/models/fields">
+   	<field name="ordering"  type="ordering" labelclass="order"/>
+    <field name="j2store_emailtemplate_id" type="selectrow"/>
+      <field name="receiver_type" type="receivertypes" />
+      <field name="language" type="text" />
+	<field name="orderstatus_id" type="orderstatuslist"/>
+	<field name="group_id" type="sql"
+			translate="false" query="SELECT * FROM #__usergroups"
+			key_field="id" value_field="title"
+	/>
+	<field name="paymentmethod" type="text"/>	
+    <field name="subject" type="text"
+           show_link="true"
+           url="index.php?option=com_j2store&amp;view=emailtemplate&amp;id=[ITEM:ID]" />
+           
+    <field name="enabled" type="published"/>
+  </fieldset>
+</form>

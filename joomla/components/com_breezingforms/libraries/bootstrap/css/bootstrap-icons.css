@@ -1,0 +1,458 @@
+@font-face {
+  font-family: 'IcoMoon';
+  src: url('../img/IcoMoon.eot');
+  src: url('../img/IcoMoon.eot?#iefix') format('embedded-opentype'), url('../img/IcoMoon.woff') format('woff'), url('../img/IcoMoon.ttf') format('truetype'), url('../img/IcoMoon.svg#IcoMoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.bfQuickMode [data-icon]:before {
+  font-family: 'IcoMoon';
+  content: attr(data-icon);
+  speak: none;
+}
+.bfQuickMode [class^="icon-"],
+.bfQuickMode [class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  *margin-right: .3em;
+  line-height: 14px;
+}
+.bfQuickMode [class^="icon-"]:before,
+.bfQuickMode [class*=" icon-"]:before {
+  font-family: 'IcoMoon';
+  font-style: normal;
+  speak: none;
+}
+.bfQuickMode .icon-home:before {
+  content: "\21";
+}
+.bfQuickMode .icon-user:before {
+  content: "\22";
+}
+.bfQuickMode .icon-checkedout:before,
+.bfQuickMode .icon-lock:before,
+.bfQuickMode .icon-locked:before {
+  content: "\23";
+}
+.bfQuickMode .icon-comment:before,
+.bfQuickMode .icon-comments:before {
+  content: "\24";
+}
+.bfQuickMode .icon-comments-2:before {
+  content: "\25";
+}
+.bfQuickMode .icon-share-alt:before,
+.bfQuickMode .icon-out:before {
+  content: "\26";
+}
+.bfQuickMode .icon-share:before,
+.bfQuickMode .icon-redo:before {
+  content: "\27";
+}
+.bfQuickMode .icon-undo:before {
+  content: "\28";
+}
+.bfQuickMode .icon-file-add:before {
+  content: "\29";
+}
+.bfQuickMode .icon-new:before,
+.bfQuickMode .icon-plus:before {
+  content: "\2a";
+}
+.bfQuickMode .icon-apply:before,
+.bfQuickMode .icon-edit:before,
+.bfQuickMode .icon-pencil:before {
+  content: "\2b";
+}
+.bfQuickMode .icon-pencil-2:before {
+  content: "\2c";
+}
+.bfQuickMode .icon-folder-open:before,
+.bfQuickMode .icon-folder:before {
+  content: "\2d";
+}
+.bfQuickMode .icon-folder-close:before,
+.bfQuickMode .icon-folder-2:before {
+  content: "\2e";
+}
+.bfQuickMode .icon-picture:before {
+  content: "\2f";
+}
+.bfQuickMode .icon-pictures:before {
+  content: "\30";
+}
+.bfQuickMode .icon-list:before,
+.bfQuickMode .icon-list-view:before {
+  content: "\31";
+}
+.bfQuickMode .icon-power-cord:before {
+  content: "\32";
+}
+.bfQuickMode .icon-cube:before {
+  content: "\33";
+}
+.bfQuickMode .icon-puzzle:before {
+  content: "\34";
+}
+.bfQuickMode .icon-flag:before {
+  content: "\35";
+}
+.bfQuickMode .icon-tools:before {
+  content: "\36";
+}
+.bfQuickMode .icon-cogs:before {
+  content: "\37";
+}
+.bfQuickMode .icon-options:before,
+.bfQuickMode .icon-cog:before {
+  content: "\38";
+}
+.bfQuickMode .icon-equalizer:before {
+  content: "\39";
+}
+.bfQuickMode .icon-wrench:before {
+  content: "\3a";
+}
+.bfQuickMode .icon-brush:before {
+  content: "\3b";
+}
+.bfQuickMode .icon-eye-open:before,
+.bfQuickMode .icon-eye:before {
+  content: "\3c";
+}
+.bfQuickMode .icon-checkbox-unchecked:before {
+  content: "\3d";
+}
+.bfQuickMode .icon-checkin:before,
+.bfQuickMode .icon-checkbox:before {
+  content: "\3e";
+}
+.bfQuickMode .icon-checkbox-partial:before {
+  content: "\3f";
+}
+.bfQuickMode .icon-asterisk:before,
+.bfQuickMode .icon-star-empty:before {
+  content: "\40";
+}
+.bfQuickMode .icon-star-2:before {
+  content: "\41";
+}
+.bfQuickMode .icon-featured:before,
+.bfQuickMode .icon-star:before {
+  content: "\42";
+}
+.bfQuickMode .icon-calendar:before {
+  content: "\43";
+}
+.bfQuickMode .icon-calendar-2:before {
+  content: "\44";
+}
+.bfQuickMode .icon-question-sign:before,
+.bfQuickMode .icon-help:before {
+  content: "\45";
+}
+.bfQuickMode .icon-support:before {
+  content: "\46";
+}
+.bfQuickMode .icon-pending:before,
+.bfQuickMode .icon-warning:before {
+  content: "\48";
+}
+.bfQuickMode .icon-publish:before,
+.bfQuickMode .icon-save:before,
+.bfQuickMode .icon-ok:before,
+.bfQuickMode .icon-checkmark:before {
+  content: "\47";
+}
+.bfQuickMode .icon-unpublish:before,
+.bfQuickMode .icon-cancel:before {
+  content: "\4a";
+}
+.bfQuickMode .icon-eye-close:before,
+.bfQuickMode .icon-minus:before {
+  content: "\4b";
+}
+.bfQuickMode .icon-purge:before,
+.bfQuickMode .icon-trash:before {
+  content: "\4c";
+}
+.bfQuickMode .icon-envelope:before,
+.bfQuickMode .icon-mail:before {
+  content: "\4d";
+}
+.bfQuickMode .icon-mail-2:before {
+  content: "\4e";
+}
+.bfQuickMode .icon-unarchive:before,
+.bfQuickMode .icon-drawer:before {
+  content: "\4f";
+}
+.bfQuickMode .icon-archive:before,
+.bfQuickMode .icon-drawer-2:before {
+  content: "\50";
+}
+.bfQuickMode .icon-box-add:before {
+  content: "\51";
+}
+.bfQuickMode .icon-box-remove:before {
+  content: "\52";
+}
+.bfQuickMode .icon-search:before {
+  content: "\53";
+}
+.bfQuickMode .icon-filter:before {
+  content: "\54";
+}
+.bfQuickMode .icon-camera:before {
+  content: "\55";
+}
+.bfQuickMode .icon-play:before {
+  content: "\56";
+}
+.bfQuickMode .icon-music:before {
+  content: "\57";
+}
+.bfQuickMode .icon-grid-view:before {
+  content: "\58";
+}
+.bfQuickMode .icon-grid-view-2:before {
+  content: "\59";
+}
+.bfQuickMode .icon-menu:before {
+  content: "\5a";
+}
+.bfQuickMode .icon-thumbs-up:before {
+  content: "\5b";
+}
+.bfQuickMode .icon-thumbs-down:before {
+  content: "\5c";
+}
+.bfQuickMode .icon-delete:before,
+.bfQuickMode .icon-remove:before,
+.bfQuickMode .icon-cancel-2:before {
+  content: "\49";
+}
+.bfQuickMode .icon-save-new:before,
+.bfQuickMode .icon-plus-2:before {
+  content: "\5d";
+}
+.bfQuickMode .icon-ban-circle:before,
+.bfQuickMode .icon-minus-sign:before,
+.bfQuickMode .icon-minus-2:before {
+  content: "\5e";
+}
+.bfQuickMode .icon-key:before {
+  content: "\5f";
+}
+.bfQuickMode .icon-quote:before {
+  content: "\60";
+}
+.bfQuickMode .icon-quote-2:before {
+  content: "\61";
+}
+.bfQuickMode .icon-database:before {
+  content: "\62";
+}
+.bfQuickMode .icon-location:before {
+  content: "\63";
+}
+.bfQuickMode .icon-zoom-in:before {
+  content: "\64";
+}
+.bfQuickMode .icon-zoom-out:before {
+  content: "\65";
+}
+.bfQuickMode .icon-expand:before {
+  content: "\66";
+}
+.bfQuickMode .icon-contract:before {
+  content: "\67";
+}
+.bfQuickMode .icon-expand-2:before {
+  content: "\68";
+}
+.bfQuickMode .icon-contract-2:before {
+  content: "\69";
+}
+.bfQuickMode .icon-health:before {
+  content: "\6a";
+}
+.bfQuickMode .icon-wand:before {
+  content: "\6b";
+}
+.bfQuickMode .icon-unblock:before,
+.bfQuickMode .icon-refresh:before {
+  content: "\6c";
+}
+.bfQuickMode .icon-vcard:before {
+  content: "\6d";
+}
+.bfQuickMode .icon-clock:before {
+  content: "\6e";
+}
+.bfQuickMode .icon-compass:before {
+  content: "\6f";
+}
+.bfQuickMode .icon-address:before {
+  content: "\70";
+}
+.bfQuickMode .icon-feed:before {
+  content: "\71";
+}
+.bfQuickMode .icon-flag-2:before {
+  content: "\72";
+}
+.bfQuickMode .icon-pin:before {
+  content: "\73";
+}
+.bfQuickMode .icon-lamp:before {
+  content: "\74";
+}
+.bfQuickMode .icon-chart:before {
+  content: "\75";
+}
+.bfQuickMode .icon-bars:before {
+  content: "\76";
+}
+.bfQuickMode .icon-pie:before {
+  content: "\77";
+}
+.bfQuickMode .icon-dashboard:before {
+  content: "\78";
+}
+.bfQuickMode .icon-lightning:before {
+  content: "\79";
+}
+.bfQuickMode .icon-move:before {
+  content: "\7a";
+}
+.bfQuickMode .icon-next:before {
+  content: "\7b";
+}
+.bfQuickMode .icon-previous:before {
+  content: "\7c";
+}
+.bfQuickMode .icon-first:before {
+  content: "\7d";
+}
+.bfQuickMode .icon-last:before {
+  content: "\e000";
+}
+.bfQuickMode .icon-loop:before {
+  content: "\e001";
+}
+.bfQuickMode .icon-shuffle:before {
+  content: "\e002";
+}
+.bfQuickMode .icon-arrow-first:before {
+  content: "\e003";
+}
+.bfQuickMode .icon-arrow-last:before {
+  content: "\e004";
+}
+.bfQuickMode .icon-chevron-up:before,
+.bfQuickMode .icon-uparrow:before,
+.bfQuickMode .icon-arrow-up:before {
+  content: "\e005";
+}
+.bfQuickMode .icon-chevron-right:before,
+.bfQuickMode .icon-arrow-right:before {
+  content: "\e006";
+}
+.bfQuickMode .icon-chevron-down:before,
+.bfQuickMode .icon-downarrow:before,
+.bfQuickMode .icon-arrow-down:before {
+  content: "\e007";
+}
+.bfQuickMode .icon-chevron-left:before,
+.bfQuickMode .icon-arrow-left:before {
+  content: "\e008";
+}
+.bfQuickMode .icon-arrow-up-2:before {
+  content: "\e009";
+}
+.bfQuickMode .icon-arrow-right-2:before {
+  content: "\e00a";
+}
+.bfQuickMode .icon-download:before,
+.bfQuickMode .icon-arrow-down-2:before {
+  content: "\e00b";
+}
+.bfQuickMode .icon-arrow-left-2:before {
+  content: "\e00c";
+}
+.bfQuickMode .icon-play-2:before {
+  content: "\e00d";
+}
+.bfQuickMode .icon-menu-2:before {
+  content: "\e00e";
+}
+.bfQuickMode .icon-arrow-up-3:before {
+  content: "\e00f";
+}
+.bfQuickMode .icon-arrow-right-3:before {
+  content: "\e010";
+}
+.bfQuickMode .icon-arrow-down-3:before {
+  content: "\e011";
+}
+.bfQuickMode .icon-arrow-left-3:before {
+  content: "\e012";
+}
+.bfQuickMode .icon-print:before,
+.bfQuickMode .icon-printer:before {
+  content: "\e013";
+}
+.bfQuickMode .icon-color-palette:before {
+  content: "\e014";
+}
+.bfQuickMode .icon-camera-2:before {
+  content: "\e015";
+}
+.bfQuickMode .icon-file:before {
+  content: "\e016";
+}
+.bfQuickMode .icon-file-remove:before {
+  content: "\e017";
+}
+.bfQuickMode .icon-save-copy:before,
+.bfQuickMode .icon-copy:before {
+  content: "\e018";
+}
+.bfQuickMode .icon-cart:before {
+  content: "\e019";
+}
+.bfQuickMode .icon-basket:before {
+  content: "\e01a";
+}
+.bfQuickMode .icon-broadcast:before {
+  content: "\e01b";
+}
+.bfQuickMode .icon-screen:before {
+  content: "\e01c";
+}
+.bfQuickMode .icon-tablet:before {
+  content: "\e01d";
+}
+.bfQuickMode .icon-mobile:before {
+  content: "\e01e";
+}
+.bfQuickMode .icon-users:before {
+  content: "\e01f";
+}
+.bfQuickMode .icon-briefcase:before {
+  content: "\e020";
+}
+.bfQuickMode .icon-download:before {
+  content: "\e021";
+}
+.bfQuickMode .icon-upload:before {
+  content: "\e022";
+}
+.bfQuickMode .icon-bookmark:before {
+  content: "\e023";
+}
+.bfQuickMode .icon-out-2:before {
+  content: "\e024";
+}

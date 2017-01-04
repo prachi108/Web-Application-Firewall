@@ -1,0 +1,51 @@
+/* ##### Uploader ##### */
+
+.bfErrorMessage {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffeded;
+    font-weight: bold;
+    float: none;
+    display: block;
+    color: red;
+}
+
+#bfFileQueue {
+	/*
+	width: 400px;
+	height: 300px;
+	overflow: auto;
+	border: 1px solid #E5E5E5;
+	*/
+	margin-bottom: 10px;
+	position: absolute;
+}
+
+#bfSubmitMessage{
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin-top: 5px;
+	padding: 10px;
+	width: 350px;
+        -moz-border-radius-bottomright: 50px 25px;
+        border-bottom-right-radius: 50px 25px;
+        z-index: 1100;
+}
+
+#bfFileQueue{
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin-top: 5px;
+	padding: 10px;
+	width: 350px;
+        -moz-border-radius-bottomright: 50px 25px;
+        border-bottom-right-radius: 50px 25px;
+        z-index: 1100;
+}
+
+.bfFileQueueItem{
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin: 5px;
+	padding: 10px;
+}

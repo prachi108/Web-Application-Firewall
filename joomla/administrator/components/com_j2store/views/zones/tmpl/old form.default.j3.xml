@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+  type="browse"
+  show_header="1"
+  show_filters="1"
+  show_pagination="1"
+  norows_placeholder="COM_J2STORE_COMMON_NORECORDS"
+  >
+
+  <headerset>
+    <header name="j2store_zone_id" type="rowselect" tdwidth="20"/>
+    <header name="zone_name" type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_ZONE_NAME"/>
+    <header name="zone_code" type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_ZONE_CODE"/>
+    <header name="country_id" type="fieldsearchable" sortable="true" translate="false" label="J2STORE_COUNTRY_NAME"/>
+    <header name="enabled" type="published" sortable="true" tdwidth="8%" />
+  </headerset>
+
+  <fieldset name="items">
+    <field name="j2store_zone_id" type="selectrow"/>
+    <field name="zone_name" type="text"
+           show_link="true"
+           url="index.php?option=com_j2store&amp;view=zone&amp;id=[ITEM:ID]" />
+    <field name="zone_code" type="text" />
+    <field name="country_id" type="text" />
+    <field name="enabled" type="published"/>
+  </fieldset>
+</form>

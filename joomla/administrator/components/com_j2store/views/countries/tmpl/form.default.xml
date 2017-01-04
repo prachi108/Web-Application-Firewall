@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* @com_j2store - J2Store
+* @author    Sasi varna kumar - Weblogicx India http://www.weblogicxindia.com
+* @copyright Copyright (C) 2014 - 19 Weblogicxindia.com. All Rights Reserved.
+* @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+* @Websites: http://j2store.org
+* @Technical Support:  Forum - http://j2store.org/forum/index.html
+ -->
+<form
+  type="browse"
+  show_header="1"
+  show_filters="1"
+  show_pagination="1"
+  norows_placeholder="J2STORE_NO_ITEMS_FOUND"
+  >
+
+  <headerset>
+    <header name="ordering" type="ordering" sortable="true"  />
+    <header name="j2store_country_id" type="rowselect" tdwidth="20" label="J2STORE_COUNTRY_ID"/>
+    <header name="country_name" type="fieldsearchable" sortable="true" translate="false"  label="J2STORE_COUNTRY_NAME"/>
+    <header name="country_isocode_2"  sortable="true" translate="false"  label="J2STORE_COUNTRY_CODE2"/>
+    <header name="country_isocode_3"  sortable="true" translate="false" label="J2STORE_COUNTRY_CODE3"/>
+    <header name="enabled" type="published" sortable="true" tdwidth="8%" />
+  </headerset>
+
+  <fieldset name="items">
+    <field name="ordering"  type="ordering" labelclass="order"/>
+    <field name="j2store_country_id" type="selectrow"/>
+    <field name="country_name" type="text" show_link="true"
+           url="index.php?option=com_j2store&amp;view=country&amp;id=[ITEM:ID]" />
+    <field name="country_isocode_2" type="text" />
+    <field name="country_isocode_3" type="text" />
+    <field name="enabled" type="published"/>
+  </fieldset>
+</form>

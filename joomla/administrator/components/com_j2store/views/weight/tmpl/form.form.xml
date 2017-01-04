@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* @com_j2store - J2Store
+* @author    Sasi varna kumar - Weblogicx India http://www.weblogicxindia.com
+* @copyright Copyright (C) 2014 - 19 Weblogicxindia.com. All Rights Reserved.
+* @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+* @Websites: http://j2store.org
+* @Technical Support:  Forum - http://j2store.org/forum/index.html
+ -->
+<form validate="true" serverside_validate="true">
+
+  <fieldset name="basic_information"            
+            class="span6">
+
+    <field name="weight_title" type="text" label="J2STORE_WEIGHT_TITLE_LABEL"
+           class="inputbox" filter="intval" required="true"/>
+
+    <field name="weight_unit" type="text" label="J2STORE_WEIGHT_UNIT_LABEL"
+            class="inputbox" filter="intval" required="true"/>
+
+
+    <field name="weight_value" type="text"  label="J2STORE_WEIGHT_VALUE_LABEL"
+           class="inputbox" filter="intval" required="true"/>
+
+
+    <field name="enabled" type="list" label="J2STORE_ENABLED"
+           labelclass=""
+           class="inputbox"
+           filter="intval" size="1" default="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+    </field>
+  </fieldset>
+</form>
